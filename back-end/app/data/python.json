@@ -1,0 +1,108 @@
+{
+
+  "name": "Python",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        { "name": "Sintaxe básica" },
+        { "name": "Variáveis e tipos de dados" },
+        { "name": "Operadores" },
+        { "name": "Entrada e saída" },
+        { "name": "Comentários" }
+      ]
+    },
+    {
+      "name": "Estruturas de Dados",
+      "children": [
+        { "name": "Listas" },
+        { "name": "Tuplas" },
+        { "name": "Dicionários" },
+        { "name": "Conjuntos" }
+      ]
+    },
+    {
+      "name": "Controle de Fluxo",
+      "children": [
+        { "name": "If / Elif / Else" },
+        { "name": "For" },
+        { "name": "While" },
+        { "name": "Break / Continue / Pass" }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        { "name": "Definindo funções" },
+        { "name": "Parâmetros e retorno" },
+        { "name": "Argumentos padrão" },
+        { "name": "Args e Kwargs" },
+        { "name": "Funções lambda" }
+      ]
+    },
+    {
+      "name": "Módulos e Pacotes",
+      "children": [
+        { "name": "Importando módulos" },
+        { "name": "Criando módulos" },
+        { "name": "Pacotes e __init__.py" }
+      ]
+    },
+    {
+      "name": "Trabalhando com Arquivos",
+      "children": [
+        { "name": "Leitura de arquivos" },
+        { "name": "Escrita em arquivos" },
+        { "name": "Contexto com with" },
+        { "name": "Manipulação de CSV e JSON" }
+      ]
+    },
+    {
+      "name": "POO",
+      "children": [
+        { "name": "Classes e objetos" },
+        { "name": "Atributos e métodos" },
+        { "name": "Encapsulamento" },
+        { "name": "Herança" },
+        { "name": "Polimorfismo" }
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
+        { "name": "Try / Except" },
+        { "name": "Finally" },
+        { "name": "Raise" },
+        { "name": "Criando exceções personalizadas" }
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
+        { "name": "Usando assert" },
+        { "name": "Testes com pytest" },
+        { "name": "Cobertura de testes" }
+      ]
+    },
+    {
+      "name": "Bibliotecas Populares",
+      "children": [
+        { "name": "NumPy" },
+        { "name": "Pandas" },
+        { "name": "Matplotlib" },
+        { "name": "Requests" },
+        { "name": "Flask" }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        { "name": "Decoradores" },
+        { "name": "Geradores" },
+        { "name": "Compreensão de listas" },
+        { "name": "Manipulação de exceções complexas" },
+        { "name": "Programação assíncrona (async/await)" }
+      ]
+    }
+  ]
+}

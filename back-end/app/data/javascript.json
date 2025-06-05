@@ -1,0 +1,199 @@
+{
+  "JavaScript": {
+    "1. Fundamentos (Básico)": {
+      "O que é JavaScript?": [
+        {
+          "descrição": "JavaScript é uma linguagem de programação interpretada, leve e dinâmica.",
+          "uso": "Essencial para desenvolvimento web, responsável pela interatividade em páginas HTML."
+        },
+        {
+          "descrição": "Executa no navegador e também no servidor (com Node.js).",
+          "uso": "Permite criar aplicações completas full-stack."
+        }
+      ],
+      "Sintaxe e estrutura básica": [
+        {
+          "descrição": "Usa ponto e vírgula (opcional) para terminar comandos.",
+          "uso": "Ajuda a evitar ambiguidades em expressões."
+        },
+        {
+          "descrição": "Declara variáveis com let, const ou var.",
+          "uso": "let e const são modernos; var é antigo."
+        },
+        {
+          "descrição": "Blocos de código delimitados por chaves {}.",
+          "uso": "Usado em funções, condicionais e loops."
+        }
+      ],
+      "Tipos de dados": [
+        {
+          "tipo": "number",
+          "exemplo": "42, 3.14",
+          "uso": "Números inteiros ou de ponto flutuante."
+        },
+        {
+          "tipo": "string",
+          "exemplo": "'texto', \"mais texto\"",
+          "uso": "Representa texto."
+        },
+        {
+          "tipo": "boolean",
+          "exemplo": "true, false",
+          "uso": "Valores lógicos."
+        },
+        {
+          "tipo": "object",
+          "exemplo": "{ nome: 'Ana', idade: 30 }",
+          "uso": "Estruturas complexas de dados."
+        },
+        {
+          "tipo": "array",
+          "exemplo": "[1, 2, 3]",
+          "uso": "Lista de valores ordenados."
+        },
+        {
+          "tipo": "undefined",
+          "exemplo": "variável declarada mas não inicializada",
+          "uso": "Indica ausência de valor atribuído."
+        },
+        {
+          "tipo": "null",
+          "exemplo": "null",
+          "uso": "Representa intencionalmente 'nenhum valor'."
+        }
+      ],
+      "Conversão de tipos": [
+        {
+          "expressão": "String(123)",
+          "descrição": "Converte número para string."
+        },
+        {
+          "expressão": "Number('456')",
+          "descrição": "Converte string para número."
+        },
+        {
+          "expressão": "Boolean('texto')",
+          "descrição": "Converte valor para booleano (true para valores não vazios)."
+        }
+      ],
+      "Operadores": {
+        "Aritméticos": [
+          { "operador": "+", "descrição": "Soma ou concatena strings." },
+          { "operador": "-", "descrição": "Subtração." },
+          { "operador": "*", "descrição": "Multiplicação." },
+          { "operador": "/", "descrição": "Divisão." },
+          { "operador": "%", "descrição": "Resto da divisão." },
+          { "operador": "**", "descrição": "Exponenciação (a^b)." }
+        ],
+        "Comparação": [
+          { "operador": "==", "descrição": "Igualdade com conversão de tipo." },
+          { "operador": "===", "descrição": "Igualdade estrita (sem conversão)." },
+          { "operador": "!=", "descrição": "Diferença com conversão." },
+          { "operador": "!==", "descrição": "Diferença estrita." },
+          { "operador": ">", "descrição": "Maior que." },
+          { "operador": "<", "descrição": "Menor que." },
+          { "operador": ">=", "descrição": "Maior ou igual." },
+          { "operador": "<=", "descrição": "Menor ou igual." }
+        ],
+        "Lógicos": [
+          { "operador": "&&", "descrição": "E lógico." },
+          { "operador": "||", "descrição": "OU lógico." },
+          { "operador": "!", "descrição": "Negação lógica." }
+        ]
+      },
+      "Estruturas de controle": {
+        "Condicionais": [
+          {
+            "estrutura": "if / else if / else",
+            "descrição": "Executa blocos de código com base em condições."
+          },
+          {
+            "estrutura": "switch",
+            "descrição": "Seleciona entre muitos blocos de código."
+          }
+        ],
+        "Laços de repetição": [
+          {
+            "estrutura": "for",
+            "descrição": "Laço com contador."
+          },
+          {
+            "estrutura": "while",
+            "descrição": "Executa enquanto a condição for verdadeira."
+          },
+          {
+            "estrutura": "do...while",
+            "descrição": "Executa ao menos uma vez e continua se condição for verdadeira."
+          },
+          {
+            "estrutura": "for...of",
+            "descrição": "Itera sobre elementos de um array ou string."
+          },
+          {
+            "estrutura": "for...in",
+            "descrição": "Itera sobre chaves de um objeto."
+          }
+        ]
+      },
+      "Funções": [
+        {
+          "tipo": "function",
+          "descrição": "Declara uma função tradicional."
+        },
+        {
+          "tipo": "arrow function",
+          "descrição": "Sintaxe moderna e concisa: `const soma = (a, b) => a + b`"
+        },
+        {
+          "tipo": "funções anônimas",
+          "descrição": "Funções sem nome, úteis como argumentos."
+        },
+        {
+          "tipo": "funções de callback",
+          "descrição": "Passadas como argumentos para outras funções."
+        }
+      ]
+    },
+    "2. Manipulação do DOM": {
+      "Seleção de elementos": [
+        { "método": "document.getElementById", "uso": "Seleciona um elemento pelo ID." },
+        { "método": "document.querySelector", "uso": "Seleciona o primeiro elemento que combina com o seletor CSS." },
+        { "método": "document.querySelectorAll", "uso": "Seleciona todos os elementos que combinam com o seletor CSS." }
+      ],
+      "Modificação": [
+        { "ação": "element.innerHTML", "uso": "Define ou obtém o conteúdo HTML." },
+        { "ação": "element.style", "uso": "Modifica o estilo CSS do elemento." },
+        { "ação": "element.setAttribute", "uso": "Define atributos como id, class, etc." }
+      ],
+      "Eventos": [
+        { "evento": "onclick", "uso": "Executa uma função quando clicado." },
+        { "evento": "addEventListener", "uso": "Adiciona ouve eventos como click, input, etc." }
+      ]
+    },
+    "3. Ferramentas e Bibliotecas": {
+      "Node.js": [
+        {
+          "descrição": "Ambiente de execução JavaScript no servidor.",
+          "uso": "Permite criar aplicações back-end com JS."
+        }
+      ],
+      "NPM/Yarn": [
+        {
+          "descrição": "Gerenciadores de pacotes para JS.",
+          "uso": "Instala e gerencia dependências de projetos."
+        }
+      ],
+      "Frameworks Populares": {
+        "React": "Criação de interfaces interativas.",
+        "Vue": "Framework progressivo e reativo.",
+        "Angular": "Framework completo da Google."
+      },
+      "Lodash": [
+        {
+          "descrição": "Biblioteca utilitária para JS.",
+          "uso": "Facilita manipulação de arrays, objetos, strings, etc."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "Java": {
+    "1. Fundamentos (Básico)": {
+      "O que é Java?": [
+        {
+          "descrição": "Java é uma linguagem de programação orientada a objetos, amplamente utilizada no desenvolvimento de aplicações corporativas, sistemas embarcados e aplicativos Android.",
+          "uso": "Ideal para aplicações de grande porte e sistemas multiplataforma."
+        },
+        {
+          "descrição": "Possui uma máquina virtual (JVM) que permite a execução em diferentes plataformas sem necessidade de recompilação.",
+          "uso": "Facilita a portabilidade e a manutenção do código."
+        }
+      ],
+      "Sintaxe e estrutura básica": [
+        {
+          "descrição": "Cada comando termina com ponto e vírgula.",
+          "uso": "Indica o fim de uma instrução."
+        },
+        {
+          "descrição": "Blocos de código são definidos por chaves `{}`.",
+          "uso": "Agrupa instruções relacionadas."
+        },
+        {
+          "descrição": "A indentação é recomendada, mas não obrigatória.",
+          "uso": "Melhora a legibilidade do código."
+        }
+      ],
+      "Tipos de dados mais comuns": [
+        {
+          "tipo": "int",
+          "exemplo": "10, -3",
+          "uso": "Representa números inteiros."
+        },
+        {
+          "tipo": "double",
+          "exemplo": "3.14",
+          "uso": "Representa números de ponto flutuante."
+        },
+        {
+          "tipo": "char",
+          "exemplo": "'A'",
+          "uso": "Representa um único caractere."
+        },
+        {
+          "tipo": "boolean",
+          "exemplo": "true, false",
+          "uso": "Representa valores lógicos."
+        },
+        {
+          "tipo": "String",
+          "exemplo": "\"Olá Mundo\"",
+          "uso": "Representa sequências de caracteres."
+        }
+      ],
+      "Estruturas de controle": {
+        "Condicionais": [
+          {
+            "estrutura": "if",
+            "descrição": "Executa um bloco de código se a condição for verdadeira."
+          },
+          {
+            "estrutura": "else",
+            "descrição": "Executa um bloco de código se a condição do if for falsa."
+          },
+          {
+            "estrutura": "else if",
+            "descrição": "Verifica uma nova condição se as anteriores forem falsas."
+          }
+        ],
+        "Laços de repetição": [
+          {
+            "estrutura": "for",
+            "descrição": "Executa um bloco de código um número específico de vezes."
+          },
+          {
+            "estrutura": "while",
+            "descrição": "Executa um bloco de código enquanto a condição for verdadeira."
+          },
+          {
+            "estrutura": "do-while",
+            "descrição": "Executa um bloco de código pelo menos uma vez, e repete enquanto a condição for verdadeira."
+          }
+        ]
+      },
+      "Funções e Métodos": [
+        {
+          "definir": "Métodos",
+          "descrição": "Funções associadas a objetos ou classes em Java."
+        },
+        {
+          "definir": "void",
+          "descrição": "Tipo de retorno que indica que o método não retorna valor."
+        },
+        {
+          "definir": "Parâmetros",
+          "descrição": "Valores passados para o método para influenciar seu comportamento."
+        },
+        {
+          "definir": "Retorno",
+          "descrição": "Valor que o método retorna após sua execução."
+        }
+      ]
+    },
+    "2. Orientação a Objetos": {
+      "Classes e Objetos": [
+        {
+          "descrição": "Classe é um molde para a criação de objetos.",
+          "uso": "Define atributos e comportamentos comuns."
+        },
+        {
+          "descrição": "Objeto é uma instância de uma classe.",
+          "uso": "Representa uma entidade com estado e comportamento."
+        }
+      ],
+      "Encapsulamento": [
+        {
+          "descrição": "Controle de acesso aos dados de um objeto.",
+          "uso": "Protege a integridade dos dados."
+        },
+        {
+          "descrição": "Utiliza modificadores de acesso como private, protected e public.",
+          "uso": "Define a visibilidade dos membros da classe."
+        }
+      ],
+      "Herança": [
+        {
+          "descrição": "Permite que uma classe herde atributos e métodos de outra.",
+          "uso": "Facilita a reutilização de código."
+        },
+        {
+          "descrição": "A classe filha pode adicionar ou modificar comportamentos.",
+          "uso": "Especializa a classe pai."
+        }
+      ],
+      "Polimorfismo": [
+        {
+          "descrição": "Permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum.",
+          "uso": "Facilita a extensão e manutenção do código."
+        },
+        {
+          "descrição": "Métodos com o mesmo nome podem ter comportamentos diferentes.",
+          "uso": "Implementa a sobrecarga e sobrescrita de métodos."
+        }
+      ],
+      "Abstração": [
+        {
+          "descrição": "Oculta os detalhes de implementação e mostra apenas a funcionalidade.",
+          "uso": "Simplifica a interação com objetos complexos."
+        },
+        {
+          "descrição": "Utiliza classes abstratas e interfaces.",
+          "uso": "Define contratos que as classes concretas devem seguir."
+        }
+      ]
+    },
+    "3. Bibliotecas Populares": {
+      "Gson": [
+        {
+          "descrição": "Biblioteca para conversão entre objetos Java e JSON.",
+          "uso": "Facilita a serialização e desserialização de dados."
+        },
+        {
+          "exemplo": "Gson gson = new Gson();"
+        }
+      ],
+      "Jackson": [
+        {
+          "descrição": "Biblioteca para processamento de JSON em Java.",
+          "uso": "Oferece alto desempenho e flexibilidade."
+        },
+        {
+          "exemplo": "ObjectMapper mapper = new ObjectMapper();"
+        }
+      ],
+      "JUnit": [
+        {
+          "descrição": "Framework para testes unitários em Java.",
+          "uso": "Permite a criação e execução de testes automatizados."
+        },
+        {
+          "exemplo": "assertEquals(expected, actual);"
+        }
+      ],
+      "Apache Commons": [
+        {
+          "descrição": "Coleção de bibliotecas utilitárias para Java.",
+          "uso": "Fornece funcionalidades adicionais como manipulação de arquivos, coleções e strings."
+        },
+        {
+          "exemplo": "StringUtils.isEmpty(str);"
+        }
+      ]
+    }
+  }
+}
