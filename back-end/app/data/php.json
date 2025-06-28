@@ -1,0 +1,160 @@
+{
+  "name": "PHP",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é PHP?",
+          "descricao": "Linguagem de script server-side para desenvolvimento web.",
+          "uso": "Criação de páginas dinâmicas e aplicações web."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Código PHP é embutido em HTML usando tags <?php ?>.",
+          "uso": "Facilita a integração com front-end."
+        },
+        {
+          "name": "Tipos básicos",
+          "descricao": "int, float, string, bool, array, object, null, resource.",
+          "uso": "Representam dados primitivos e compostos."
+        }
+      ]
+    },
+    {
+      "name": "Variáveis e Tipagem",
+      "children": [
+        {
+          "name": "Declaração de variáveis",
+          "descricao": "Variáveis começam com $ e não precisam de declaração explícita de tipo.",
+          "uso": "Tipagem dinâmica facilita desenvolvimento rápido."
+        },
+        {
+          "name": "Tipagem dinâmica",
+          "descricao": "Tipos são inferidos e podem mudar durante execução.",
+          "uso": "Flexibilidade, porém exige cuidado com erros."
+        }
+      ]
+    },
+    {
+      "name": "Controle de fluxo",
+      "children": [
+        {
+          "name": "Condicionais",
+          "descricao": "if, else, elseif, switch para controle de decisão.",
+          "uso": "Executar código baseado em condições."
+        },
+        {
+          "name": "Loops",
+          "descricao": "for, foreach, while, do-while para repetição.",
+          "uso": "Iterar sobre dados ou executar repetidamente."
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Definição",
+          "descricao": "function nome($param) { corpo }",
+          "uso": "Agrupa código reutilizável."
+        },
+        {
+          "name": "Parâmetros padrão",
+          "descricao": "Permite definir valores padrão para parâmetros.",
+          "uso": "Facilita chamadas de função flexíveis."
+        },
+        {
+          "name": "Retorno",
+          "descricao": "Funções podem retornar valores com return.",
+          "uso": "Obter resultado de processamento."
+        }
+      ]
+    },
+    {
+      "name": "Programação Orientada a Objetos",
+      "children": [
+        {
+          "name": "Classes e Objetos",
+          "descricao": "Definição com class, criação com new.",
+          "uso": "Organiza código em estruturas modulares."
+        },
+        {
+          "name": "Propriedades e Métodos",
+          "descricao": "Variáveis e funções dentro de classes.",
+          "uso": "Definem estado e comportamento dos objetos."
+        },
+        {
+          "name": "Modificadores de acesso",
+          "descricao": "public, private, protected controlam visibilidade.",
+          "uso": "Encapsulamento e segurança."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Extends permite herdar classes base.",
+          "uso": "Reutilização e especialização de código."
+        },
+        {
+          "name": "Interfaces e Traits",
+          "descricao": "Definem contratos e reutilização de código.",
+          "uso": "Flexibiliza arquitetura e composição."
+        }
+      ]
+    },
+    {
+      "name": "Manipulação de Arrays",
+      "children": [
+        {
+          "name": "Arrays indexados e associativos",
+          "descricao": "Armazenam listas e pares chave-valor.",
+          "uso": "Manipulação de coleções de dados."
+        },
+        {
+          "name": "Funções úteis",
+          "descricao": "array_push, array_pop, array_merge, foreach, etc.",
+          "uso": "Facilita operações comuns em arrays."
+        }
+      ]
+    },
+    {
+      "name": "Superglobais",
+      "children": [
+        {
+          "name": "$_GET, $_POST, $_SESSION, $_COOKIE",
+          "descricao": "Variáveis automáticas para dados HTTP e sessão.",
+          "uso": "Manipulação de formulários, sessões e cookies."
+        }
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
+        {
+          "name": "Try-catch",
+          "descricao": "Blocos para captura e tratamento de exceções.",
+          "uso": "Evitar falhas e controlar erros."
+        }
+      ]
+    },
+    {
+      "name": "Ecossistema e Ferramentas",
+      "children": [
+        {
+          "name": "Composer",
+          "descricao": "Gerenciador de dependências para PHP.",
+          "uso": "Facilita instalação e atualização de bibliotecas."
+        },
+        {
+          "name": "Frameworks populares",
+          "descricao": "Laravel, Symfony, CodeIgniter, Zend.",
+          "uso": "Estrutura para desenvolvimento rápido e organizado."
+        },
+        {
+          "name": "PHP 7+",
+          "descricao": "Melhorias de performance e tipagem forte opcional.",
+          "uso": "Código mais rápido e robusto."
+        }
+      ]
+    }
+  ]
+}

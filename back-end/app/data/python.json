@@ -1,107 +1,300 @@
 {
-
   "name": "Python",
+  "descricao": "Python é uma linguagem de programação de alto nível, interpretada, com sintaxe clara e simples, muito usada para desenvolvimento web, automação, ciência de dados, inteligência artificial, entre outros.",
   "children": [
     {
       "name": "Fundamentos",
       "children": [
-        { "name": "Sintaxe básica" },
-        { "name": "Variáveis e tipos de dados" },
-        { "name": "Operadores" },
-        { "name": "Entrada e saída" },
-        { "name": "Comentários" }
+        {
+          "name": "O que é Python?",
+          "descricao": "Linguagem de programação de alto nível, interpretada, com sintaxe clara e simples, muito usada para desenvolvimento web, automação, ciência de dados, inteligência artificial, entre outros.",
+          "uso": "Compreender a base e propósito da linguagem Python."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Conjunto de regras que define como escrever comandos em Python corretamente, como indentação obrigatória, uso de dois-pontos em estruturas de controle e regras de nomenclatura de variáveis.",
+          "uso": "Escrever código Python correto e legível."
+        },
+        {
+          "name": "Variáveis e tipos de dados",
+          "descricao": "Como declarar variáveis e trabalhar com os principais tipos de dados nativos, como inteiros (int), números decimais (float), textos (str), booleanos (bool), entre outros.",
+          "uso": "Armazenar e manipular diferentes tipos de dados."
+        },
+        {
+          "name": "Operadores",
+          "descricao": "Uso de operadores aritméticos (+, -, *, /), relacionais (==, !=, >, <), lógicos (and, or, not) e de atribuição (=, +=, -=) para realizar operações com variáveis e valores.",
+          "uso": "Realizar operações matemáticas, comparações e manipulações de valores."
+        },
+        {
+          "name": "Entrada e saída",
+          "descricao": "Como ler dados do usuário com a função input() e exibir informações no console com print(), além de formatar saídas com f-strings e outros métodos.",
+          "uso": "Interagir com o usuário através de entrada e saída de dados."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Inserção de comentários no código para documentação e explicação, usando # para linhas simples ou ''' (ou \"\"\") para docstrings em funções e módulos.",
+          "uso": "Documentar e explicar o código para facilitar entendimento."
+        }
       ]
     },
     {
       "name": "Estruturas de Dados",
       "children": [
-        { "name": "Listas" },
-        { "name": "Tuplas" },
-        { "name": "Dicionários" },
-        { "name": "Conjuntos" }
+        {
+          "name": "Listas",
+          "descricao": "Estrutura de dados ordenada, mutável e que permite armazenar múltiplos valores, inclusive de tipos diferentes, podendo ser acessada por índices.",
+          "uso": "Armazenar coleções ordenadas de itens modificáveis."
+        },
+        {
+          "name": "Tuplas",
+          "descricao": "Estrutura de dados semelhante à lista, porém imutável, ideal para armazenar conjuntos de dados que não devem ser alterados.",
+          "uso": "Armazenar coleções ordenadas e imutáveis."
+        },
+        {
+          "name": "Dicionários",
+          "descricao": "Coleção de pares chave-valor que permite acesso rápido a dados por meio de chaves únicas. Útil para representar entidades ou registros.",
+          "uso": "Armazenar dados associativos para acesso rápido via chaves."
+        },
+        {
+          "name": "Conjuntos",
+          "descricao": "Coleção não ordenada de elementos únicos, usada para eliminar duplicatas e realizar operações matemáticas como união e interseção.",
+          "uso": "Gerenciar coleções únicas e realizar operações de conjunto."
+        }
       ]
     },
     {
       "name": "Controle de Fluxo",
       "children": [
-        { "name": "If / Elif / Else" },
-        { "name": "For" },
-        { "name": "While" },
-        { "name": "Break / Continue / Pass" }
+        {
+          "name": "If / Elif / Else",
+          "descricao": "Permite a execução condicional de blocos de código com base em expressões booleanas, possibilitando decisões dentro do programa.",
+          "uso": "Controlar o fluxo de execução com decisões condicionais."
+        },
+        {
+          "name": "For",
+          "descricao": "Estrutura de repetição que percorre elementos de uma sequência (lista, string, range, etc.), executando um bloco de código para cada item.",
+          "uso": "Repetir ações para cada elemento em uma sequência."
+        },
+        {
+          "name": "While",
+          "descricao": "Laço de repetição baseado em condição, que executa um bloco de código enquanto a condição for verdadeira.",
+          "uso": "Executar repetidamente enquanto uma condição for verdadeira."
+        },
+        {
+          "name": "Break / Continue / Pass",
+          "descricao": "Instruções especiais para controle de laços: break encerra o laço, continue pula para a próxima iteração, e pass não faz nada (usado como placeholder).",
+          "uso": "Controlar o fluxo dentro de laços de repetição."
+        }
       ]
     },
     {
       "name": "Funções",
       "children": [
-        { "name": "Definindo funções" },
-        { "name": "Parâmetros e retorno" },
-        { "name": "Argumentos padrão" },
-        { "name": "Args e Kwargs" },
-        { "name": "Funções lambda" }
+        {
+          "name": "Definindo funções",
+          "descricao": "Criação de blocos de código reutilizáveis usando a palavra-chave def, permitindo modularidade e organização do programa.",
+          "uso": "Modularizar e reutilizar blocos de código."
+        },
+        {
+          "name": "Parâmetros e retorno",
+          "descricao": "Definição de parâmetros para entrada de dados na função e uso de return para devolver um valor ao final da execução da função.",
+          "uso": "Receber dados de entrada e retornar resultados de funções."
+        },
+        {
+          "name": "Argumentos padrão",
+          "descricao": "Parâmetros com valores predefinidos que são utilizados caso o usuário não forneça um valor ao chamar a função.",
+          "uso": "Definir valores padrão para parâmetros opcionais."
+        },
+        {
+          "name": "*Args e **Kwargs",
+          "descricao": "Permitem passar uma quantidade variável de argumentos para uma função: *args para argumentos posicionais e **kwargs para nomeados.",
+          "uso": "Aceitar número variável de argumentos em funções."
+        },
+        {
+          "name": "Funções lambda",
+          "descricao": "Funções anônimas e de sintaxe curta, úteis para tarefas simples e rápidas, geralmente passadas como argumentos para outras funções.",
+          "uso": "Criar funções simples e rápidas inline."
+        }
       ]
     },
     {
       "name": "Módulos e Pacotes",
       "children": [
-        { "name": "Importando módulos" },
-        { "name": "Criando módulos" },
-        { "name": "Pacotes e __init__.py" }
+        {
+          "name": "Importando módulos",
+          "descricao": "Utilização de bibliotecas internas ou externas com a palavra-chave import, permitindo reutilização de código e acesso a funcionalidades extras.",
+          "uso": "Reutilizar código externo e funcionalidades prontas."
+        },
+        {
+          "name": "Criando módulos",
+          "descricao": "Organização do código em arquivos .py para reutilização e modularização, facilitando manutenção e clareza do projeto.",
+          "uso": "Dividir o código em partes organizadas e reutilizáveis."
+        },
+        {
+          "name": "Pacotes e __init__.py",
+          "descricao": "Agrupamento de múltiplos módulos em diretórios com um arquivo __init__.py para indicar que são pacotes Python válidos.",
+          "uso": "Organizar módulos em pacotes para melhor estruturação."
+        }
       ]
     },
     {
       "name": "Trabalhando com Arquivos",
       "children": [
-        { "name": "Leitura de arquivos" },
-        { "name": "Escrita em arquivos" },
-        { "name": "Contexto com with" },
-        { "name": "Manipulação de CSV e JSON" }
+        {
+          "name": "Leitura de arquivos",
+          "descricao": "Abertura e leitura de conteúdo de arquivos de texto com métodos como read(), readline() e readlines().",
+          "uso": "Ler dados de arquivos para uso no programa."
+        },
+        {
+          "name": "Escrita em arquivos",
+          "descricao": "Criação ou alteração de arquivos usando métodos como write() e writelines(), com os modos de abertura 'w', 'a', etc.",
+          "uso": "Salvar ou atualizar informações em arquivos."
+        },
+        {
+          "name": "Contexto com with",
+          "descricao": "Uso da instrução with para abrir arquivos de forma segura e automática, garantindo o fechamento adequado, mesmo em caso de erros.",
+          "uso": "Garantir abertura e fechamento seguros de arquivos."
+        },
+        {
+          "name": "Manipulação de CSV e JSON",
+          "descricao": "Leitura e escrita de arquivos estruturados em formatos como CSV (usando csv.reader/writer) e JSON (usando json.load/dump).",
+          "uso": "Trabalhar com dados estruturados em formatos comuns."
+        }
       ]
     },
     {
       "name": "POO",
       "children": [
-        { "name": "Classes e objetos" },
-        { "name": "Atributos e métodos" },
-        { "name": "Encapsulamento" },
-        { "name": "Herança" },
-        { "name": "Polimorfismo" }
+        {
+          "name": "Classes e objetos",
+          "descricao": "Base da programação orientada a objetos: definição de classes (estruturas) que geram objetos com características e comportamentos.",
+          "uso": "Modelar entidades do mundo real no código."
+        },
+        {
+          "name": "Atributos e métodos",
+          "descricao": "Atributos são dados associados a um objeto; métodos são funções que definem o comportamento do objeto dentro da classe.",
+          "uso": "Definir dados e comportamentos de objetos."
+        },
+        {
+          "name": "Encapsulamento",
+          "descricao": "Restrição do acesso direto aos dados internos do objeto, permitindo controle por meio de métodos (getters/setters) e níveis de visibilidade.",
+          "uso": "Proteger dados internos e controlar acesso."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Mecanismo que permite que uma classe herde atributos e métodos de outra, promovendo reutilização e extensibilidade.",
+          "uso": "Reutilizar código e especializar classes."
+        },
+        {
+          "name": "Polimorfismo",
+          "descricao": "Capacidade de diferentes classes implementarem métodos com o mesmo nome, mas comportamentos distintos, facilitando flexibilidade no código.",
+          "uso": "Permitir diferentes implementações para mesma interface."
+        }
       ]
     },
     {
       "name": "Tratamento de Erros",
       "children": [
-        { "name": "Try / Except" },
-        { "name": "Finally" },
-        { "name": "Raise" },
-        { "name": "Criando exceções personalizadas" }
+        {
+          "name": "Try / Except",
+          "descricao": "Bloco usado para capturar e tratar erros durante a execução do código, evitando que o programa pare abruptamente.",
+          "uso": "Capturar e tratar exceções durante a execução."
+        },
+        {
+          "name": "Finally",
+          "descricao": "Parte do bloco try que é executada sempre, independentemente de ocorrer erro ou não, ideal para liberar recursos (como arquivos abertos).",
+          "uso": "Executar código de limpeza após tentativa de execução."
+        },
+        {
+          "name": "Raise",
+          "descricao": "Lançamento manual de exceções, usado para forçar a ocorrência de erros específicos em situações controladas.",
+          "uso": "Disparar exceções intencionalmente para controle de erros."
+        },
+        {
+          "name": "Criando exceções personalizadas",
+          "descricao": "Criação de classes de exceção próprias, derivadas de Exception, para lidar com erros específicos da aplicação de forma mais clara.",
+          "uso": "Definir tipos de erro específicos para a aplicação."
+        }
       ]
     },
     {
       "name": "Testes",
       "children": [
-        { "name": "Usando assert" },
-        { "name": "Testes com pytest" },
-        { "name": "Cobertura de testes" }
+        {
+          "name": "Usando assert",
+          "descricao": "Verificação de condições esperadas durante o desenvolvimento; se a condição for falsa, lança um erro AssertionError.",
+          "uso": "Verificar suposições no código durante testes."
+        },
+        {
+          "name": "Testes com pytest",
+          "descricao": "Uso da biblioteca pytest para criar testes automatizados, organizados em funções que validam o comportamento do código.",
+          "uso": "Automatizar testes para garantir funcionamento correto."
+        },
+        {
+          "name": "Cobertura de testes",
+          "descricao": "Avaliação do quanto do código foi testado, utilizando ferramentas que apontam quais linhas foram ou não executadas pelos testes.",
+          "uso": "Medir a eficácia dos testes aplicados."
+        }
       ]
     },
     {
       "name": "Bibliotecas Populares",
       "children": [
-        { "name": "NumPy" },
-        { "name": "Pandas" },
-        { "name": "Matplotlib" },
-        { "name": "Requests" },
-        { "name": "Flask" }
+        {
+          "name": "NumPy",
+          "descricao": "Biblioteca poderosa para cálculos numéricos, com suporte a arrays multidimensionais e operações vetorizadas de alta performance.",
+          "uso": "Realizar cálculos numéricos e manipulação eficiente de arrays."
+        },
+        {
+          "name": "Pandas",
+          "descricao": "Ferramenta essencial para análise de dados, oferecendo estruturas como DataFrames para manipular tabelas com facilidade.",
+          "uso": "Manipular e analisar dados tabulares facilmente."
+        },
+        {
+          "name": "Matplotlib",
+          "descricao": "Biblioteca para criar gráficos e visualizações em 2D, como histogramas, linhas, dispersão, barras e mais.",
+          "uso": "Gerar gráficos e visualizações de dados."
+        },
+        {
+          "name": "Requests",
+          "descricao": "Biblioteca simples e poderosa para enviar requisições HTTP, útil para consumir APIs e interagir com serviços web.",
+          "uso": "Realizar requisições HTTP de forma simples."
+        },
+        {
+          "name": "Flask",
+          "descricao": "Micro framework web que permite criar aplicações web de forma simples e rápida, ideal para APIs e sistemas leves.",
+          "uso": "Desenvolver aplicações web e APIs leves rapidamente."
+        }
       ]
     },
     {
       "name": "Avançado",
       "children": [
-        { "name": "Decoradores" },
-        { "name": "Geradores" },
-        { "name": "Compreensão de listas" },
-        { "name": "Manipulação de exceções complexas" },
-        { "name": "Programação assíncrona (async/await)" }
+        {
+          "name": "Decoradores",
+          "descricao": "Funções que recebem outra função como argumento e retornam uma nova função, permitindo modificar ou estender o comportamento de funções existentes.",
+          "uso": "Adicionar funcionalidades extras a funções de forma elegante."
+        },
+        {
+          "name": "Geradores",
+          "descricao": "Funções que usam yield para retornar valores um de cada vez, economizando memória ao lidar com grandes volumes de dados.",
+          "uso": "Produzir sequências de valores de forma eficiente e preguiçosa."
+        },
+        {
+          "name": "Compreensão de listas",
+          "descricao": "Sintaxe compacta para criar listas de forma eficiente, baseada em loops e condições, ideal para transformar coleções de dados.",
+          "uso": "Criar listas de forma rápida e concisa."
+        },
+        {
+          "name": "Manipulação de exceções complexas",
+          "descricao": "Técnicas avançadas para capturar, tratar e reestruturar exceções em situações específicas e múltiplas camadas de erro.",
+          "uso": "Gerenciar erros em cenários complexos e encadeados."
+        },
+        {
+          "name": "Programação assíncrona (async/await)",
+          "descricao": "Execução de código de forma não bloqueante usando async e await, ideal para tarefas como acesso à rede ou leitura de arquivos simultâneos.",
+          "uso": "Executar operações concorrentes sem bloquear o programa."
+        }
       ]
     }
   ]

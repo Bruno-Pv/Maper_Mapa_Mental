@@ -1,199 +1,266 @@
 {
-  "JavaScript": {
-    "1. Fundamentos (Básico)": {
-      "O que é JavaScript?": [
+  "name": "JavaScript",
+  "descricao": "JavaScript é uma linguagem de programação dinâmica, interpretada, amplamente usada para desenvolvimento web, tanto no front-end quanto no back-end.",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
         {
-          "descrição": "JavaScript é uma linguagem de programação interpretada, leve e dinâmica.",
-          "uso": "Essencial para desenvolvimento web, responsável pela interatividade em páginas HTML."
+          "name": "O que é JavaScript?",
+          "descricao": "Linguagem de programação dinâmica que roda principalmente em navegadores para tornar páginas web interativas e dinâmicas.",
+          "uso": "Criar páginas web interativas e dinâmicas."
         },
         {
-          "descrição": "Executa no navegador e também no servidor (com Node.js).",
-          "uso": "Permite criar aplicações completas full-stack."
-        }
-      ],
-      "Sintaxe e estrutura básica": [
-        {
-          "descrição": "Usa ponto e vírgula (opcional) para terminar comandos.",
-          "uso": "Ajuda a evitar ambiguidades em expressões."
+          "name": "Sintaxe básica",
+          "descricao": "Regras fundamentais para escrever código JavaScript corretamente, incluindo uso de ponto e vírgula, chaves e estrutura de comandos.",
+          "uso": "Estruturar o código de forma clara e funcional."
         },
         {
-          "descrição": "Declara variáveis com let, const ou var.",
-          "uso": "let e const são modernos; var é antigo."
+          "name": "Variáveis e tipos de dados",
+          "descricao": "Declaração de variáveis com var, let e const, e os principais tipos de dados: number, string, boolean, object, array, null e undefined.",
+          "uso": "Armazenar e manipular dados."
         },
         {
-          "descrição": "Blocos de código delimitados por chaves {}.",
-          "uso": "Usado em funções, condicionais e loops."
-        }
-      ],
-      "Tipos de dados": [
-        {
-          "tipo": "number",
-          "exemplo": "42, 3.14",
-          "uso": "Números inteiros ou de ponto flutuante."
+          "name": "Operadores",
+          "descricao": "Uso de operadores aritméticos (+, -, *, /), relacionais (==, ===, !=, !==), lógicos (&&, ||, !) e de atribuição (=, +=, -=).",
+          "uso": "Realizar operações matemáticas, lógicas e atribuições."
         },
         {
-          "tipo": "string",
-          "exemplo": "'texto', \"mais texto\"",
-          "uso": "Representa texto."
+          "name": "Entrada e saída",
+          "descricao": "Interação básica com o usuário usando console.log() para saída e prompt() para entrada de dados em navegadores.",
+          "uso": "Comunicar-se com o usuário e obter dados."
         },
         {
-          "tipo": "boolean",
-          "exemplo": "true, false",
-          "uso": "Valores lógicos."
-        },
-        {
-          "tipo": "object",
-          "exemplo": "{ nome: 'Ana', idade: 30 }",
-          "uso": "Estruturas complexas de dados."
-        },
-        {
-          "tipo": "array",
-          "exemplo": "[1, 2, 3]",
-          "uso": "Lista de valores ordenados."
-        },
-        {
-          "tipo": "undefined",
-          "exemplo": "variável declarada mas não inicializada",
-          "uso": "Indica ausência de valor atribuído."
-        },
-        {
-          "tipo": "null",
-          "exemplo": "null",
-          "uso": "Representa intencionalmente 'nenhum valor'."
-        }
-      ],
-      "Conversão de tipos": [
-        {
-          "expressão": "String(123)",
-          "descrição": "Converte número para string."
-        },
-        {
-          "expressão": "Number('456')",
-          "descrição": "Converte string para número."
-        },
-        {
-          "expressão": "Boolean('texto')",
-          "descrição": "Converte valor para booleano (true para valores não vazios)."
-        }
-      ],
-      "Operadores": {
-        "Aritméticos": [
-          { "operador": "+", "descrição": "Soma ou concatena strings." },
-          { "operador": "-", "descrição": "Subtração." },
-          { "operador": "*", "descrição": "Multiplicação." },
-          { "operador": "/", "descrição": "Divisão." },
-          { "operador": "%", "descrição": "Resto da divisão." },
-          { "operador": "**", "descrição": "Exponenciação (a^b)." }
-        ],
-        "Comparação": [
-          { "operador": "==", "descrição": "Igualdade com conversão de tipo." },
-          { "operador": "===", "descrição": "Igualdade estrita (sem conversão)." },
-          { "operador": "!=", "descrição": "Diferença com conversão." },
-          { "operador": "!==", "descrição": "Diferença estrita." },
-          { "operador": ">", "descrição": "Maior que." },
-          { "operador": "<", "descrição": "Menor que." },
-          { "operador": ">=", "descrição": "Maior ou igual." },
-          { "operador": "<=", "descrição": "Menor ou igual." }
-        ],
-        "Lógicos": [
-          { "operador": "&&", "descrição": "E lógico." },
-          { "operador": "||", "descrição": "OU lógico." },
-          { "operador": "!", "descrição": "Negação lógica." }
-        ]
-      },
-      "Estruturas de controle": {
-        "Condicionais": [
-          {
-            "estrutura": "if / else if / else",
-            "descrição": "Executa blocos de código com base em condições."
-          },
-          {
-            "estrutura": "switch",
-            "descrição": "Seleciona entre muitos blocos de código."
-          }
-        ],
-        "Laços de repetição": [
-          {
-            "estrutura": "for",
-            "descrição": "Laço com contador."
-          },
-          {
-            "estrutura": "while",
-            "descrição": "Executa enquanto a condição for verdadeira."
-          },
-          {
-            "estrutura": "do...while",
-            "descrição": "Executa ao menos uma vez e continua se condição for verdadeira."
-          },
-          {
-            "estrutura": "for...of",
-            "descrição": "Itera sobre elementos de um array ou string."
-          },
-          {
-            "estrutura": "for...in",
-            "descrição": "Itera sobre chaves de um objeto."
-          }
-        ]
-      },
-      "Funções": [
-        {
-          "tipo": "function",
-          "descrição": "Declara uma função tradicional."
-        },
-        {
-          "tipo": "arrow function",
-          "descrição": "Sintaxe moderna e concisa: `const soma = (a, b) => a + b`"
-        },
-        {
-          "tipo": "funções anônimas",
-          "descrição": "Funções sem nome, úteis como argumentos."
-        },
-        {
-          "tipo": "funções de callback",
-          "descrição": "Passadas como argumentos para outras funções."
+          "name": "Comentários",
+          "descricao": "Inserção de comentários no código para documentação usando // para comentários de linha única e /* */ para blocos.",
+          "uso": "Documentar e esclarecer o código."
         }
       ]
     },
-    "2. Manipulação do DOM": {
-      "Seleção de elementos": [
-        { "método": "document.getElementById", "uso": "Seleciona um elemento pelo ID." },
-        { "método": "document.querySelector", "uso": "Seleciona o primeiro elemento que combina com o seletor CSS." },
-        { "método": "document.querySelectorAll", "uso": "Seleciona todos os elementos que combinam com o seletor CSS." }
-      ],
-      "Modificação": [
-        { "ação": "element.innerHTML", "uso": "Define ou obtém o conteúdo HTML." },
-        { "ação": "element.style", "uso": "Modifica o estilo CSS do elemento." },
-        { "ação": "element.setAttribute", "uso": "Define atributos como id, class, etc." }
-      ],
-      "Eventos": [
-        { "evento": "onclick", "uso": "Executa uma função quando clicado." },
-        { "evento": "addEventListener", "uso": "Adiciona ouve eventos como click, input, etc." }
+    {
+      "name": "Estruturas de Dados",
+      "children": [
+        {
+          "name": "Arrays",
+          "descricao": "Coleção ordenada de elementos que pode conter diferentes tipos de dados, acessada por índices numéricos.",
+          "uso": "Armazenar listas de dados ordenados."
+        },
+        {
+          "name": "Objetos",
+          "descricao": "Estrutura que armazena pares chave-valor, representando entidades complexas com propriedades e métodos.",
+          "uso": "Modelar entidades com atributos e comportamentos."
+        },
+        {
+          "name": "Sets",
+          "descricao": "Coleção de valores únicos, útil para eliminar duplicatas e realizar operações matemáticas de conjuntos.",
+          "uso": "Gerenciar coleções sem elementos repetidos."
+        },
+        {
+          "name": "Maps",
+          "descricao": "Coleção de pares chave-valor onde as chaves podem ser de qualquer tipo, mantendo a ordem de inserção.",
+          "uso": "Armazenar dados associados com chaves variadas."
+        }
       ]
     },
-    "3. Ferramentas e Bibliotecas": {
-      "Node.js": [
+    {
+      "name": "Controle de Fluxo",
+      "children": [
         {
-          "descrição": "Ambiente de execução JavaScript no servidor.",
-          "uso": "Permite criar aplicações back-end com JS."
+          "name": "If / Else",
+          "descricao": "Estrutura condicional que executa blocos de código diferentes dependendo do resultado de uma expressão booleana.",
+          "uso": "Executar decisões condicionais."
+        },
+        {
+          "name": "Switch",
+          "descricao": "Estrutura para seleção entre múltiplas opções baseada no valor de uma expressão, substituindo múltiplos if-else.",
+          "uso": "Simplificar múltiplas condições."
+        },
+        {
+          "name": "For",
+          "descricao": "Laço de repetição controlado por contador, usado para iterar um número definido de vezes.",
+          "uso": "Repetir código com número fixo de iterações."
+        },
+        {
+          "name": "While",
+          "descricao": "Executa um bloco de código repetidamente enquanto a condição especificada for verdadeira.",
+          "uso": "Repetir código enquanto uma condição for verdadeira."
+        },
+        {
+          "name": "Do...While",
+          "descricao": "Executa o bloco de código pelo menos uma vez e repete enquanto a condição for verdadeira.",
+          "uso": "Garantir execução mínima antes da repetição condicional."
+        },
+        {
+          "name": "Break / Continue",
+          "descricao": "Controle do fluxo dentro de laços: break interrompe o laço, continue pula para a próxima iteração.",
+          "uso": "Gerenciar fluxo de execução em loops."
         }
-      ],
-      "NPM/Yarn": [
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
         {
-          "descrição": "Gerenciadores de pacotes para JS.",
-          "uso": "Instala e gerencia dependências de projetos."
+          "name": "Declaração de funções",
+          "descricao": "Criação de funções nomeadas usando a palavra-chave function, que agrupam código reutilizável.",
+          "uso": "Organizar e reutilizar código."
+        },
+        {
+          "name": "Funções anônimas",
+          "descricao": "Funções sem nome, normalmente usadas como argumentos ou valores retornados.",
+          "uso": "Passar comportamentos dinamicamente."
+        },
+        {
+          "name": "Arrow functions",
+          "descricao": "Sintaxe concisa para criar funções anônimas, com comportamento simplificado em relação ao this.",
+          "uso": "Escrever funções de forma mais compacta."
+        },
+        {
+          "name": "Parâmetros e retorno",
+          "descricao": "Passagem de valores para funções através de parâmetros e uso da palavra-chave return para devolver resultados.",
+          "uso": "Comunicar dados entre funções."
+        },
+        {
+          "name": "Funções de callback",
+          "descricao": "Funções passadas como argumentos para outras funções, geralmente para executar código após eventos ou operações assíncronas.",
+          "uso": "Gerenciar operações assíncronas e eventos."
         }
-      ],
-      "Frameworks Populares": {
-        "React": "Criação de interfaces interativas.",
-        "Vue": "Framework progressivo e reativo.",
-        "Angular": "Framework completo da Google."
-      },
-      "Lodash": [
+      ]
+    },
+    {
+      "name": "Programação Orientada a Objetos",
+      "children": [
         {
-          "descrição": "Biblioteca utilitária para JS.",
-          "uso": "Facilita manipulação de arrays, objetos, strings, etc."
+          "name": "Classes e objetos",
+          "descricao": "Definição de classes como moldes para criar objetos com atributos e métodos, facilitando a modelagem do sistema.",
+          "uso": "Criar modelos reutilizáveis e estruturados."
+        },
+        {
+          "name": "Atributos e métodos",
+          "descricao": "Propriedades (dados) e funções (comportamentos) que definem o estado e ações de objetos.",
+          "uso": "Definir estado e comportamento de objetos."
+        },
+        {
+          "name": "Encapsulamento",
+          "descricao": "Controle de acesso a dados internos do objeto, protegendo atributos e expondo métodos para manipulação segura.",
+          "uso": "Proteger dados e controlar acesso."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Mecanismo para criar classes derivadas que herdam características e comportamentos de outras classes.",
+          "uso": "Reutilizar e estender funcionalidades."
+        },
+        {
+          "name": "Polimorfismo",
+          "descricao": "Capacidade de classes diferentes implementarem métodos com o mesmo nome, mas comportamentos distintos.",
+          "uso": "Adaptar comportamento conforme o contexto."
+        }
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
+        {
+          "name": "Try / Catch",
+          "descricao": "Bloco para capturar e tratar exceções, prevenindo que erros interrompam o programa.",
+          "uso": "Tratar erros em tempo de execução."
+        },
+        {
+          "name": "Finally",
+          "descricao": "Bloco que sempre executa após try/catch, usado para liberar recursos ou executar ações finais.",
+          "uso": "Executar ações finais garantidas."
+        },
+        {
+          "name": "Throw",
+          "descricao": "Instrução para lançar exceções manualmente, criando erros personalizados durante a execução.",
+          "uso": "Gerar erros personalizados."
+        },
+        {
+          "name": "Exceções personalizadas",
+          "descricao": "Definição de erros próprios para situações específicas, melhorando o controle e a clareza do tratamento de erros.",
+          "uso": "Criar tipos específicos de erro."
+        }
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
+        {
+          "name": "Testes unitários",
+          "descricao": "Verificação automatizada de partes isoladas do código para garantir funcionamento correto.",
+          "uso": "Garantir qualidade do código."
+        },
+        {
+          "name": "Frameworks de teste",
+          "descricao": "Ferramentas como Jest e Mocha que facilitam a criação, execução e organização de testes automatizados.",
+          "uso": "Automatizar e organizar testes."
+        },
+        {
+          "name": "Cobertura de testes",
+          "descricao": "Medição de quais partes do código foram executadas pelos testes, indicando a qualidade da cobertura.",
+          "uso": "Avaliar eficiência dos testes."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas e Frameworks",
+      "children": [
+        {
+          "name": "React",
+          "descricao": "Biblioteca para construção de interfaces de usuário reutilizáveis e reativas.",
+          "uso": "Desenvolver interfaces interativas."
+        },
+        {
+          "name": "Vue",
+          "descricao": "Framework progressivo focado em criar interfaces interativas com curva de aprendizado suave.",
+          "uso": "Criar interfaces reativas facilmente."
+        },
+        {
+          "name": "Angular",
+          "descricao": "Framework completo para desenvolvimento de aplicações web robustas e estruturadas.",
+          "uso": "Construir aplicações web complexas."
+        },
+        {
+          "name": "Node.js",
+          "descricao": "Ambiente de execução JavaScript no servidor, permitindo aplicações back-end.",
+          "uso": "Executar JavaScript no servidor."
+        },
+        {
+          "name": "Express",
+          "descricao": "Framework minimalista para construção de servidores web e APIs com Node.js.",
+          "uso": "Criar APIs e servidores web."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Assíncrono e Promises",
+          "descricao": "Manejo de operações assíncronas e tratamento de resultados futuros com objetos Promise.",
+          "uso": "Gerenciar operações assíncronas."
+        },
+        {
+          "name": "Async / Await",
+          "descricao": "Sintaxe moderna que facilita o trabalho com código assíncrono, tornando-o mais legível e parecido com código síncrono.",
+          "uso": "Escrever código assíncrono de forma clara."
+        },
+        {
+          "name": "Destructuring",
+          "descricao": "Extração simplificada de valores de arrays ou propriedades de objetos para variáveis individuais.",
+          "uso": "Simplificar extração de dados."
+        },
+        {
+          "name": "Modules",
+          "descricao": "Importação e exportação de funcionalidades entre arquivos JavaScript, promovendo modularidade.",
+          "uso": "Organizar código em módulos reutilizáveis."
+        },
+        {
+          "name": "Decorators",
+          "descricao": "Padrão para adicionar comportamentos a classes ou métodos sem modificar diretamente seu código original.",
+          "uso": "Adicionar funcionalidades a classes/métodos."
         }
       ]
     }
-  }
+  ]
 }

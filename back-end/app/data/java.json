@@ -1,195 +1,201 @@
 {
-  "Java": {
-    "1. Fundamentos (Básico)": {
-      "O que é Java?": [
+  "name": "Java",
+  "descricao": "Java é uma linguagem de programação orientada a objetos, amplamente usada para desenvolver aplicações multiplataforma, incluindo sistemas corporativos, aplicativos Android e sistemas embarcados. A JVM (Java Virtual Machine) permite portabilidade entre diferentes sistemas operacionais.",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
         {
-          "descrição": "Java é uma linguagem de programação orientada a objetos, amplamente utilizada no desenvolvimento de aplicações corporativas, sistemas embarcados e aplicativos Android.",
-          "uso": "Ideal para aplicações de grande porte e sistemas multiplataforma."
+          "name": "O que é Java?",
+          "descricao": "Linguagem de programação orientada a objetos focada em portabilidade, segurança e desempenho, que roda na JVM para ser executada em várias plataformas.",
+          "uso": "Compreender a base e propósito da linguagem Java."
         },
         {
-          "descrição": "Possui uma máquina virtual (JVM) que permite a execução em diferentes plataformas sem necessidade de recompilação.",
-          "uso": "Facilita a portabilidade e a manutenção do código."
-        }
-      ],
-      "Sintaxe e estrutura básica": [
-        {
-          "descrição": "Cada comando termina com ponto e vírgula.",
-          "uso": "Indica o fim de uma instrução."
+          "name": "Sintaxe básica",
+          "descricao": "Instruções terminam com ponto e vírgula; blocos de código são delimitados por chaves {}. A indentação melhora a legibilidade, embora não seja obrigatória.",
+          "uso": "Escrever código Java correto e legível."
         },
         {
-          "descrição": "Blocos de código são definidos por chaves `{}`.",
-          "uso": "Agrupa instruções relacionadas."
+          "name": "Variáveis e tipos de dados",
+          "descricao": "Java possui tipos primitivos (int, double, char, boolean) e tipos por referência como String. Variáveis devem ser declaradas com o tipo explicitamente.",
+          "uso": "Declarar e manipular dados na aplicação."
         },
         {
-          "descrição": "A indentação é recomendada, mas não obrigatória.",
-          "uso": "Melhora a legibilidade do código."
-        }
-      ],
-      "Tipos de dados mais comuns": [
-        {
-          "tipo": "int",
-          "exemplo": "10, -3",
-          "uso": "Representa números inteiros."
+          "name": "Operadores",
+          "descricao": "Incluem operadores aritméticos (+, -, *, /, %), relacionais (==, !=, >, <, >=, <=), lógicos (&&, ||, !) e de atribuição (=, +=, -=, etc.).",
+          "uso": "Realizar operações matemáticas, comparações e atribuições."
         },
         {
-          "tipo": "double",
-          "exemplo": "3.14",
-          "uso": "Representa números de ponto flutuante."
+          "name": "Entrada e saída",
+          "descricao": "Entrada de dados usando Scanner (ex: new Scanner(System.in)) e saída via System.out.print ou System.out.println.",
+          "uso": "Interagir com o usuário ou sistema por meio de dados."
         },
         {
-          "tipo": "char",
-          "exemplo": "'A'",
-          "uso": "Representa um único caractere."
-        },
-        {
-          "tipo": "boolean",
-          "exemplo": "true, false",
-          "uso": "Representa valores lógicos."
-        },
-        {
-          "tipo": "String",
-          "exemplo": "\"Olá Mundo\"",
-          "uso": "Representa sequências de caracteres."
-        }
-      ],
-      "Estruturas de controle": {
-        "Condicionais": [
-          {
-            "estrutura": "if",
-            "descrição": "Executa um bloco de código se a condição for verdadeira."
-          },
-          {
-            "estrutura": "else",
-            "descrição": "Executa um bloco de código se a condição do if for falsa."
-          },
-          {
-            "estrutura": "else if",
-            "descrição": "Verifica uma nova condição se as anteriores forem falsas."
-          }
-        ],
-        "Laços de repetição": [
-          {
-            "estrutura": "for",
-            "descrição": "Executa um bloco de código um número específico de vezes."
-          },
-          {
-            "estrutura": "while",
-            "descrição": "Executa um bloco de código enquanto a condição for verdadeira."
-          },
-          {
-            "estrutura": "do-while",
-            "descrição": "Executa um bloco de código pelo menos uma vez, e repete enquanto a condição for verdadeira."
-          }
-        ]
-      },
-      "Funções e Métodos": [
-        {
-          "definir": "Métodos",
-          "descrição": "Funções associadas a objetos ou classes em Java."
-        },
-        {
-          "definir": "void",
-          "descrição": "Tipo de retorno que indica que o método não retorna valor."
-        },
-        {
-          "definir": "Parâmetros",
-          "descrição": "Valores passados para o método para influenciar seu comportamento."
-        },
-        {
-          "definir": "Retorno",
-          "descrição": "Valor que o método retorna após sua execução."
+          "name": "Comentários",
+          "descricao": "Comentários de uma linha com // e de múltiplas linhas com /* */ para documentação e clareza do código.",
+          "uso": "Documentar o código para facilitar entendimento e manutenção."
         }
       ]
     },
-    "2. Orientação a Objetos": {
-      "Classes e Objetos": [
+    {
+      "name": "Estruturas de Controle",
+      "children": [
         {
-          "descrição": "Classe é um molde para a criação de objetos.",
-          "uso": "Define atributos e comportamentos comuns."
+          "name": "Condicionais",
+          "descricao": "Estruturas if, else if, else para executar blocos de código com base em condições, além do switch para múltiplas alternativas.",
+          "uso": "Tomar decisões no fluxo do programa."
         },
         {
-          "descrição": "Objeto é uma instância de uma classe.",
-          "uso": "Representa uma entidade com estado e comportamento."
-        }
-      ],
-      "Encapsulamento": [
-        {
-          "descrição": "Controle de acesso aos dados de um objeto.",
-          "uso": "Protege a integridade dos dados."
-        },
-        {
-          "descrição": "Utiliza modificadores de acesso como private, protected e public.",
-          "uso": "Define a visibilidade dos membros da classe."
-        }
-      ],
-      "Herança": [
-        {
-          "descrição": "Permite que uma classe herde atributos e métodos de outra.",
-          "uso": "Facilita a reutilização de código."
-        },
-        {
-          "descrição": "A classe filha pode adicionar ou modificar comportamentos.",
-          "uso": "Especializa a classe pai."
-        }
-      ],
-      "Polimorfismo": [
-        {
-          "descrição": "Permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum.",
-          "uso": "Facilita a extensão e manutenção do código."
-        },
-        {
-          "descrição": "Métodos com o mesmo nome podem ter comportamentos diferentes.",
-          "uso": "Implementa a sobrecarga e sobrescrita de métodos."
-        }
-      ],
-      "Abstração": [
-        {
-          "descrição": "Oculta os detalhes de implementação e mostra apenas a funcionalidade.",
-          "uso": "Simplifica a interação com objetos complexos."
-        },
-        {
-          "descrição": "Utiliza classes abstratas e interfaces.",
-          "uso": "Define contratos que as classes concretas devem seguir."
+          "name": "Laços de repetição",
+          "descricao": "Laços for, while e do-while permitem repetir blocos de código; for é ideal quando se conhece o número de iterações, while e do-while para condições dinâmicas.",
+          "uso": "Repetir ações até que uma condição seja satisfeita."
         }
       ]
     },
-    "3. Bibliotecas Populares": {
-      "Gson": [
+    {
+      "name": "Funções e Métodos",
+      "children": [
         {
-          "descrição": "Biblioteca para conversão entre objetos Java e JSON.",
-          "uso": "Facilita a serialização e desserialização de dados."
+          "name": "Definindo métodos",
+          "descricao": "Métodos são funções definidas dentro de classes, podendo retornar valores ou serem void (sem retorno).",
+          "uso": "Organizar e reutilizar código em unidades lógicas."
         },
         {
-          "exemplo": "Gson gson = new Gson();"
+          "name": "Parâmetros e retorno",
+          "descricao": "Métodos recebem parâmetros entre parênteses e retornam valores usando return.",
+          "uso": "Comunicar dados entre métodos e controlar resultados."
+        },
+        {
+          "name": "Sobrecarga de métodos",
+          "descricao": "Permite criar múltiplos métodos com o mesmo nome, mas com diferentes tipos ou número de parâmetros.",
+          "uso": "Implementar comportamentos flexíveis em métodos."
         }
-      ],
-      "Jackson": [
+      ]
+    },
+    {
+      "name": "Programação Orientada a Objetos",
+      "children": [
         {
-          "descrição": "Biblioteca para processamento de JSON em Java.",
-          "uso": "Oferece alto desempenho e flexibilidade."
+          "name": "Classes e objetos",
+          "descricao": "Classes são moldes para criar objetos que possuem atributos e métodos, representando entidades do mundo real.",
+          "uso": "Modelar entidades e seus comportamentos no software."
         },
         {
-          "exemplo": "ObjectMapper mapper = new ObjectMapper();"
+          "name": "Encapsulamento",
+          "descricao": "Controle de acesso a atributos e métodos usando modificadores private, protected e public para proteger dados internos.",
+          "uso": "Proteger dados e controlar acesso dentro das classes."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Permite que uma classe derive de outra, herdando seus atributos e métodos com a palavra-chave extends.",
+          "uso": "Reutilizar código e criar hierarquias entre classes."
+        },
+        {
+          "name": "Polimorfismo",
+          "descricao": "Permite que métodos com o mesmo nome se comportem de forma diferente, suportando sobrecarga (mesmo método, parâmetros diferentes) e sobrescrita (subclasse redefine método da superclasse).",
+          "uso": "Implementar comportamento variável em métodos similares."
+        },
+        {
+          "name": "Abstração",
+          "descricao": "Oculta detalhes da implementação usando classes abstratas ou interfaces, expondo apenas a funcionalidade essencial.",
+          "uso": "Simplificar a complexidade expondo somente o necessário."
         }
-      ],
-      "JUnit": [
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
         {
-          "descrição": "Framework para testes unitários em Java.",
-          "uso": "Permite a criação e execução de testes automatizados."
+          "name": "Try / Catch / Finally",
+          "descricao": "Estruturas para capturar exceções e tratar erros em tempo de execução, com finally para executar código independentemente de erro.",
+          "uso": "Gerenciar erros e garantir execução segura do programa."
         },
         {
-          "exemplo": "assertEquals(expected, actual);"
+          "name": "Throw e Throws",
+          "descricao": "throw lança manualmente uma exceção; throws declara que um método pode lançar uma exceção.",
+          "uso": "Lançar e declarar exceções para controle de erros."
+        },
+        {
+          "name": "Exceções personalizadas",
+          "descricao": "Criação de classes de exceção específicas estendendo Exception para tratar erros particulares do sistema.",
+          "uso": "Definir erros específicos para situações particulares."
         }
-      ],
-      "Apache Commons": [
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
         {
-          "descrição": "Coleção de bibliotecas utilitárias para Java.",
-          "uso": "Fornece funcionalidades adicionais como manipulação de arquivos, coleções e strings."
+          "name": "JUnit",
+          "descricao": "Framework para escrever e executar testes unitários automatizados em Java, usando anotações como @Test.",
+          "uso": "Garantir qualidade do código por meio de testes automáticos."
         },
         {
-          "exemplo": "StringUtils.isEmpty(str);"
+          "name": "Asserts",
+          "descricao": "Métodos como assertEquals() verificam se os resultados esperados e obtidos são iguais durante testes.",
+          "uso": "Validar resultados esperados nos testes."
+        },
+        {
+          "name": "Cobertura de testes",
+          "descricao": "Medição da porcentagem do código que foi executada durante os testes, com ferramentas como JaCoCo para geração de relatórios.",
+          "uso": "Avaliar a eficácia dos testes realizados."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas Populares",
+      "children": [
+        {
+          "name": "Gson",
+          "descricao": "Biblioteca do Google para converter objetos Java para JSON e vice-versa, muito usada em APIs.",
+          "uso": "Facilitar serialização e desserialização JSON."
+        },
+        {
+          "name": "Jackson",
+          "descricao": "Biblioteca eficiente para serialização e desserialização de objetos Java em JSON.",
+          "uso": "Manipular JSON de forma eficiente em Java."
+        },
+        {
+          "name": "JUnit",
+          "descricao": "Biblioteca padrão para testes unitários em Java.",
+          "uso": "Escrever e executar testes unitários."
+        },
+        {
+          "name": "Apache Commons",
+          "descricao": "Conjunto de utilitários para manipulação de strings, arquivos, coleções e outras funcionalidades comuns.",
+          "uso": "Aprimorar funcionalidades comuns com utilitários prontos."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Streams e Lambda",
+          "descricao": "API moderna para manipulação de coleções usando programação funcional e expressões lambda.",
+          "uso": "Processar coleções de forma declarativa e eficiente."
+        },
+        {
+          "name": "Generics",
+          "descricao": "Permite criar classes e métodos que funcionam com qualquer tipo de dado, garantindo segurança de tipos em tempo de compilação.",
+          "uso": "Garantir flexibilidade e segurança de tipos no código."
+        },
+        {
+          "name": "Coleções",
+          "descricao": "Estruturas como List, Set, Map e suas implementações (ArrayList, HashMap, etc.) para armazenar e manipular grupos de objetos.",
+          "uso": "Armazenar e manipular grupos de dados dinamicamente."
+        },
+        {
+          "name": "Threads e Concorrência",
+          "descricao": "Execução simultânea de múltiplas tarefas para melhorar desempenho e reatividade da aplicação.",
+          "uso": "Implementar multitarefa para melhor performance."
+        },
+        {
+          "name": "Anotações (Annotations)",
+          "descricao": "Metadados que modificam o comportamento do código, como @Override, @Deprecated e @Test.",
+          "uso": "Adicionar informações e comportamentos extras ao código."
         }
       ]
     }
-  }
+  ]
 }

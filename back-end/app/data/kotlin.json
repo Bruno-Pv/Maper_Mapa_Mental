@@ -1,0 +1,191 @@
+{
+  "name": "Kotlin",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é Kotlin?",
+          "descricao": "Linguagem moderna, estaticamente tipada, desenvolvida pela JetBrains, interoperável com Java e focada em concisão e segurança."
+        },
+        {
+          "name": "Características principais",
+          "descricao": "Sintaxe concisa, inferência de tipos, null safety, corrotinas para programação assíncrona."
+        },
+        {
+          "name": "Usos comuns",
+          "descricao": "Desenvolvimento Android, aplicações backend, multiplataforma (Kotlin Multiplatform)."
+        }
+      ]
+    },
+    {
+      "name": "Sintaxe básica",
+      "children": [
+        {
+          "name": "Declaração de variáveis",
+          "descricao": "'val' para valores imutáveis e 'var' para mutáveis."
+        },
+        {
+          "name": "Tipos básicos",
+          "descricao": "Int, Double, Float, Boolean, Char, String, Unit, Nothing."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Linha única com // e múltiplas linhas com /* ... */."
+        },
+        {
+          "name": "Função main",
+          "descricao": "Ponto de entrada padrão: fun main(args: Array<String>) { ... }"
+        }
+      ]
+    },
+    {
+      "name": "Tipos e variáveis",
+      "children": [
+        {
+          "name": "Inferência de tipo",
+          "descricao": "O compilador deduz o tipo com base no valor atribuído."
+        },
+        {
+          "name": "Nullable types",
+          "descricao": "Tipos que aceitam null usando '?' (ex: String?)."
+        },
+        {
+          "name": "Operadores seguros para null",
+          "descricao": "?. (safe call), ?: (Elvis operator), !! (not-null assertion)."
+        }
+      ]
+    },
+    {
+      "name": "Controle de fluxo",
+      "children": [
+        {
+          "name": "Condicionais",
+          "descricao": "if, else, if como expressão, operador when (switch aprimorado)."
+        },
+        {
+          "name": "Laços",
+          "descricao": "for, while, do-while."
+        },
+        {
+          "name": "Ranges e progressões",
+          "descricao": "Uso de '..', 'until', 'step' para intervalos."
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Declaração",
+          "descricao": "fun nome(parâmetros): TipoRetorno { corpo }"
+        },
+        {
+          "name": "Funções de uma linha",
+          "descricao": "fun soma(a: Int, b: Int) = a + b"
+        },
+        {
+          "name": "Parâmetros padrão e nomeados",
+          "descricao": "Permite valores padrão e chamadas por nome."
+        },
+        {
+          "name": "Funções locais e aninhadas",
+          "descricao": "Funções dentro de outras funções para melhor organização."
+        }
+      ]
+    },
+    {
+      "name": "Classes e Orientação a Objetos",
+      "children": [
+        {
+          "name": "Classes",
+          "descricao": "Definidas com 'class', podem ter construtores primários e secundários."
+        },
+        {
+          "name": "Propriedades",
+          "descricao": "Campos com getters e setters automáticos ou customizados."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Classes são 'final' por padrão; 'open' permite herança."
+        },
+        {
+          "name": "Interfaces",
+          "descricao": "Definem contratos com métodos abstratos e implementação padrão."
+        },
+        {
+          "name": "Data classes",
+          "descricao": "Classes para armazenar dados com métodos automáticos como equals, hashCode e toString."
+        },
+        {
+          "name": "Objetos singleton",
+          "descricao": "'object' para declarar singletons e objetos anônimos."
+        }
+      ]
+    },
+    {
+      "name": "Coleções e funções lambda",
+      "children": [
+        {
+          "name": "Coleções padrão",
+          "descricao": "List, Set, Map com versões mutáveis e imutáveis."
+        },
+        {
+          "name": "Funções Lambda",
+          "descricao": "Funções anônimas para programação funcional."
+        },
+        {
+          "name": "Operações em coleções",
+          "descricao": "filter, map, reduce, forEach, entre outras."
+        }
+      ]
+    },
+    {
+      "name": "Corrotinas e programação assíncrona",
+      "children": [
+        {
+          "name": "Conceitos básicos",
+          "descricao": "Corrotinas simplificam código assíncrono e concorrente."
+        },
+        {
+          "name": "Builders",
+          "descricao": "launch, async para iniciar corrotinas."
+        },
+        {
+          "name": "Scope e cancelamento",
+          "descricao": "Gerenciamento do ciclo de vida das corrotinas."
+        }
+      ]
+    },
+    {
+      "name": "Manipulação de exceções",
+      "children": [
+        {
+          "name": "Try-catch-finally",
+          "descricao": "Tratamento de exceções para controlar erros."
+        },
+        {
+          "name": "Throw",
+          "descricao": "Lançamento de exceções."
+        }
+      ]
+    },
+    {
+      "name": "Ferramentas e Ecossistema",
+      "children": [
+        {
+          "name": "Compiladores",
+          "descricao": "Compilação para JVM, JavaScript e Kotlin Native."
+        },
+        {
+          "name": "Frameworks",
+          "descricao": "Android, Ktor para backend, Kotlin Multiplatform."
+        },
+        {
+          "name": "IDE recomendada",
+          "descricao": "IntelliJ IDEA com suporte nativo para Kotlin."
+        }
+      ]
+    }
+  ]
+}

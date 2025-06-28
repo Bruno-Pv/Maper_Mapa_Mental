@@ -1,0 +1,125 @@
+{
+  "name": "TypeScript",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é TypeScript?",
+          "descricao": "Superset do JavaScript que adiciona tipagem estática opcional.",
+          "uso": "Melhora a manutenção e robustez de projetos JS."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Extende a sintaxe do JavaScript com tipos, interfaces e classes.",
+          "uso": "Permite detectar erros em tempo de compilação."
+        },
+        {
+          "name": "Tipos básicos",
+          "descricao": "number, string, boolean, any, void, null, undefined, tuple, enum.",
+          "uso": "Controle e validação dos tipos usados no código."
+        }
+      ]
+    },
+    {
+      "name": "Variáveis e Constantes",
+      "children": [
+        {
+          "name": "Declaração",
+          "descricao": "let, const e var com escopo e imutabilidade distintas.",
+          "uso": "Definem variáveis mutáveis e constantes."
+        },
+        {
+          "name": "Tipos explícitos",
+          "descricao": "Declaração explícita dos tipos das variáveis.",
+          "uso": "Evita erros e melhora autocompletar em IDEs."
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Definição de funções",
+          "descricao": "Sintaxe com tipos para parâmetros e retorno.",
+          "uso": "Assegura tipos corretos na entrada e saída da função."
+        },
+        {
+          "name": "Funções anônimas e arrow functions",
+          "descricao": "Sintaxe curta e léxica para 'this'.",
+          "uso": "Melhora legibilidade e escopo de contexto."
+        },
+        {
+          "name": "Parâmetros opcionais e padrão",
+          "descricao": "Permitem maior flexibilidade nas chamadas de função.",
+          "uso": "Facilitam sobrecarga e comportamento padrão."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces e Tipos",
+      "children": [
+        {
+          "name": "Interfaces",
+          "descricao": "Definição de contratos para objetos e classes.",
+          "uso": "Assegura conformidade estrutural entre objetos."
+        },
+        {
+          "name": "Tipos personalizados (type aliases)",
+          "descricao": "Criação de tipos complexos e combinações.",
+          "uso": "Facilita reutilização e legibilidade."
+        }
+      ]
+    },
+    {
+      "name": "Classes e Orientação a Objetos",
+      "children": [
+        {
+          "name": "Classes",
+          "descricao": "Suporte completo a classes com construtores, herança e modificadores de acesso.",
+          "uso": "Modelagem de dados e lógica orientada a objetos."
+        },
+        {
+          "name": "Herança e Polimorfismo",
+          "descricao": "Extensão de classes e sobrescrita de métodos.",
+          "uso": "Promove reutilização e flexibilidade."
+        }
+      ]
+    },
+    {
+      "name": "Generics",
+      "children": [
+        {
+          "name": "Tipos genéricos",
+          "descricao": "Criação de componentes reutilizáveis e seguros em tipos.",
+          "uso": "Permite definição de funções e classes independentes de tipos específicos."
+        }
+      ]
+    },
+    {
+      "name": "Manipulação de Módulos",
+      "children": [
+        {
+          "name": "Importação e exportação",
+          "descricao": "Sintaxe para modularização do código.",
+          "uso": "Organiza e reutiliza código entre arquivos."
+        }
+      ]
+    },
+    {
+      "name": "Ferramentas e Ecossistema",
+      "children": [
+        {
+          "name": "Compilação",
+          "descricao": "Uso do tsc para compilar TS para JS.",
+          "uso": "Permite execução em ambientes JS."
+        },
+        {
+          "name": "Integração com frameworks",
+          "descricao": "Suporte para Angular, React, Vue com TS.",
+          "uso": "Melhora desenvolvimento front-end e back-end."
+        }
+      ]
+    }
+  ]
+}

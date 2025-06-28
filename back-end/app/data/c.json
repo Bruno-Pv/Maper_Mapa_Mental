@@ -1,0 +1,175 @@
+{
+  "name": "C",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é C?",
+          "descricao": "Linguagem de programação de propósito geral, criada nos anos 1970, usada em sistemas operacionais e programação de baixo nível."
+        },
+        {
+          "name": "Características principais",
+          "descricao": "Imperativa, estruturada, sem suporte nativo a POO, foco em desempenho e controle de hardware."
+        }
+      ]
+    },
+    {
+      "name": "Sintaxe básica",
+      "children": [
+        {
+          "name": "Estrutura do programa",
+          "descricao": "Função principal main, uso de chaves {} para blocos, ponto e vírgula para finalizar instruções."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Comentários de linha com // e blocos com /* ... */."
+        }
+      ]
+    },
+    {
+      "name": "Tipos de dados",
+      "children": [
+        {
+          "name": "Tipos primitivos",
+          "descricao": "int, float, double, char, _Bool (bool em stdbool.h)."
+        },
+        {
+          "name": "Modificadores de tipo",
+          "descricao": "signed, unsigned, long, short para alterar o tamanho e sinal dos tipos."
+        }
+      ]
+    },
+    {
+      "name": "Operadores",
+      "children": [
+        {
+          "name": "Aritméticos",
+          "descricao": "+, -, *, /, %"
+        },
+        {
+          "name": "Relacionais",
+          "descricao": "==, !=, >, <, >=, <="
+        },
+        {
+          "name": "Lógicos",
+          "descricao": "&&, ||, !"
+        },
+        {
+          "name": "Bitwise",
+          "descricao": "&, |, ^, ~, <<, >>"
+        },
+        {
+          "name": "Atribuição",
+          "descricao": "=, +=, -=, *=, /="
+        }
+      ]
+    },
+    {
+      "name": "Controle de fluxo",
+      "children": [
+        {
+          "name": "Condicionais",
+          "descricao": "if, else if, else"
+        },
+        {
+          "name": "Laços",
+          "descricao": "for, while, do-while"
+        },
+        {
+          "name": "Controle de laços",
+          "descricao": "break, continue"
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Declaração e definição",
+          "descricao": "Funções com tipo de retorno, parâmetros e corpo delimitado por chaves."
+        },
+        {
+          "name": "Passagem por valor",
+          "descricao": "Copia dos valores dos argumentos para os parâmetros da função."
+        },
+        {
+          "name": "Passagem por referência (ponteiros)",
+          "descricao": "Uso de ponteiros para modificar valores fora da função."
+        },
+        {
+          "name": "Recursão",
+          "descricao": "Funções que chamam a si mesmas para resolver problemas iterativos."
+        }
+      ]
+    },
+    {
+      "name": "Emulando POO em C",
+      "children": [
+        {
+          "name": "Structs",
+          "descricao": "Agrupamento de dados relacionados."
+        },
+        {
+          "name": "Ponteiros para funções",
+          "descricao": "Associando comportamento às structs."
+        },
+        {
+          "name": "Encapsulamento",
+          "descricao": "Separação de interface (header) e implementação (source)."
+        },
+        {
+          "name": "Herança e polimorfismo",
+          "descricao": "Simulação com composição e ponteiros para funções."
+        }
+      ]
+    },
+    {
+      "name": "Manipulação de memória",
+      "children": [
+        {
+          "name": "Alocação dinâmica",
+          "descricao": "Uso de malloc, calloc, realloc e free para gerenciar memória."
+        },
+        {
+          "name": "Ponteiros",
+          "descricao": "Declaração, aritmética e cuidado com memória."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas e ferramentas",
+      "children": [
+        {
+          "name": "Compiladores",
+          "descricao": "GCC, Clang e outros compiladores populares."
+        },
+        {
+          "name": "Depuradores",
+          "descricao": "GDB para depuração passo a passo."
+        },
+        {
+          "name": "Ferramentas de análise",
+          "descricao": "Valgrind para detectar vazamentos de memória."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Preprocessador",
+          "descricao": "Diretivas #define, #include, macros e condicionais."
+        },
+        {
+          "name": "Programação concorrente",
+          "descricao": "Threads, mutexes e sincronização (biblioteca pthread)."
+        },
+        {
+          "name": "Interação com hardware",
+          "descricao": "Manipulação de registradores e portas I/O."
+        }
+      ]
+    }
+  ]
+}

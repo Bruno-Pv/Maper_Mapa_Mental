@@ -1,0 +1,28 @@
+.tooltip-balao {
+  position: fixed;
+  transform: translate(-50%, -100%);
+  z-index: 999999;
+
+  background-color: #dbdada;
+  color: #000000;
+  font-size: .56rem;         /* 🔽 Antes era 1.3rem */
+  line-height: .84rem;     /* 🔽 Antes era 1.8rem */
+  padding: 6px 8px;      /* 🔽 Antes era 18px 22px */
+  max-width: 130px;        /* 🔽 Antes era 400px */
+  border-radius: 10px;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  white-space: normal;
+  text-align: left;
+  pointer-events: none;
+}
+
+/* Animação de entrada opcional */
+@keyframes fadeInTooltip {
+  from { opacity: 0; transform: translate(-50%, -110%); }
+  to { opacity: 1; transform: translate(-50%, -100%); }
+}
+
+.tooltip-balao {
+  animation: fadeInTooltip 0.2s ease-in-out;
+}

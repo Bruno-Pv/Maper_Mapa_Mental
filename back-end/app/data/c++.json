@@ -1,0 +1,156 @@
+{
+  "name": "C++",
+  "children": [
+    {
+      "name": "1. Fundamentos (Básico)",
+      "children": [
+        {
+          "name": "O que é C++?",
+          "children": [
+            {
+              "descricao": "C++ é uma linguagem de programação compilada, baseada em C, que adiciona suporte a orientação a objetos.",
+              "uso": "Muito usada para desenvolvimento de jogos, sistemas operacionais, software embarcado e aplicações de alto desempenho."
+            },
+            {
+              "descricao": "Combina paradigmas de programação estruturada, orientada a objetos e genérica.",
+              "uso": "Flexível para diferentes estilos de desenvolvimento."
+            }
+          ]
+        },
+        {
+          "name": "Sintaxe e estrutura básica",
+          "children": [
+            {
+              "descricao": "Comandos terminam com ponto e vírgula.",
+              "uso": "Delimita instruções."
+            },
+            {
+              "descricao": "Blocos de código são delimitados por `{}`.",
+              "uso": "Usado em funções, condicionais, loops etc."
+            },
+            {
+              "descricao": "Função principal: `int main()`.",
+              "uso": "Ponto de entrada do programa."
+            }
+          ]
+        },
+        {
+          "name": "Tipos de dados",
+          "children": [
+            { "tipo": "int", "exemplo": "42", "uso": "Números inteiros." },
+            { "tipo": "float / double", "exemplo": "3.14", "uso": "Números reais com ponto flutuante." },
+            { "tipo": "char", "exemplo": "'a'", "uso": "Um caractere." },
+            { "tipo": "bool", "exemplo": "true, false", "uso": "Lógico (booleano)." },
+            { "tipo": "string (std::string)", "exemplo": "\"texto\"", "uso": "Texto (string de alto nível)." }
+          ]
+        },
+        {
+          "name": "Operadores",
+          "children": [
+            { "categoria": "Aritméticos", "operadores": ["+", "-", "*", "/", "%"] },
+            { "categoria": "Relacionais", "operadores": ["==", "!=", "<", "<=", ">", ">="] },
+            { "categoria": "Lógicos", "operadores": ["&&", "||", "!"] },
+            { "categoria": "Atribuição", "operadores": ["=", "+=", "-=", "*=", "/="] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Controle de Fluxo",
+      "children": [
+        {
+          "name": "Condicionais",
+          "children": [
+            { "estrutura": "if / else", "descricao": "Executa blocos de código baseados em condições." },
+            { "estrutura": "switch", "descricao": "Seleciona um entre múltiplos caminhos baseados em valores inteiros ou enum." }
+          ]
+        },
+        {
+          "name": "Loops",
+          "children": [
+            { "estrutura": "for", "descricao": "Laço com contador." },
+            { "estrutura": "while", "descricao": "Executa enquanto condição for verdadeira." },
+            { "estrutura": "do-while", "descricao": "Executa ao menos uma vez." },
+            { "estrutura": "range-based for", "descricao": "Itera por elementos de containers: `for (auto x : container)`." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Funções",
+      "children": [
+        {
+          "name": "Definição e uso",
+          "children": [
+            { "descricao": "Definidas com tipo de retorno, nome e parâmetros.", "exemplo": "int soma(int a, int b) { return a + b; }" }
+          ]
+        },
+        {
+          "name": "Sobrecarga de funções",
+          "descricao": "Permite múltiplas funções com o mesmo nome mas assinaturas diferentes."
+        },
+        {
+          "name": "Funções inline e lambda",
+          "descricao": "Funções `inline` têm desempenho otimizado; lambdas são funções anônimas."
+        }
+      ]
+    },
+    {
+      "name": "4. Programação Orientada a Objetos",
+      "children": [
+        { "name": "Classes e objetos", "descricao": "Classes encapsulam dados e comportamentos; objetos são instâncias dessas classes." },
+        { "name": "Encapsulamento", "descricao": "Controla acesso aos membros via modificadores: public, private, protected." },
+        { "name": "Herança", "descricao": "Permite que uma classe derive de outra: `class Derivada : public Base`." },
+        { "name": "Polimorfismo", "descricao": "Métodos podem ser redefinidos nas classes derivadas (virtual functions)." },
+        { "name": "Abstração", "descricao": "Classes abstratas contêm métodos virtuais puros." }
+      ]
+    },
+    {
+      "name": "5. Ponteiros e Memória",
+      "children": [
+        { "name": "Ponteiros", "descricao": "Armazenam endereços de memória.", "exemplo": "int *p = &x;" },
+        { "name": "Referências", "descricao": "Alias de uma variável.", "exemplo": "int& ref = var;" },
+        { "name": "Alocação dinâmica", "descricao": "Usa `new` e `delete` para alocar/liberar memória." },
+        { "name": "Smart pointers (C++11+)", "descricao": "Gerenciam memória automaticamente: `std::unique_ptr`, `std::shared_ptr`." }
+      ]
+    },
+    {
+      "name": "6. Templates e STL",
+      "children": [
+        { "name": "Templates", "descricao": "Permite escrever código genérico (classes e funções): `template <typename T>`." },
+        {
+          "name": "STL (Standard Template Library)",
+          "children": [
+            { "name": "Containers", "descricao": "vector, list, map, set, queue, stack" },
+            { "name": "Iteradores", "descricao": "Permitem percorrer containers de forma uniforme." },
+            { "name": "Algoritmos", "descricao": "sort, find, count, for_each" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. Manipulação de Arquivos",
+      "children": [
+        { "name": "Streams", "descricao": "Utiliza `ifstream`, `ofstream`, `fstream` da biblioteca `<fstream>` para leitura e escrita de arquivos." },
+        { "name": "Exemplo básico", "exemplo": "std::ofstream out(\"arquivo.txt\"); out << \"Hello!\";" }
+      ]
+    },
+    {
+      "name": "8. Exceções",
+      "children": [
+        { "name": "Tratamento de erros", "descricao": "Usa `try`, `catch`, `throw`.", "exemplo": "try { ... } catch (std::exception& e) { ... }" },
+        { "name": "Tipos", "descricao": "Pode lançar tipos primitivos ou objetos derivados de `std::exception`." }
+      ]
+    },
+    {
+      "name": "9. Recursos Modernos (C++11 a C++20)",
+      "children": [
+        { "name": "Auto", "descricao": "Deduz o tipo automaticamente: `auto x = 42;`" },
+        { "name": "Lambda", "descricao": "Funções anônimas: `[] (int x) { return x + 1; }`" },
+        { "name": "Range-based for", "descricao": "Itera containers facilmente: `for (auto x : vec)`" },
+        { "name": "Smart pointers", "descricao": "`std::unique_ptr`, `std::shared_ptr`, `std::weak_ptr`." },
+        { "name": "Constexpr", "descricao": "Avaliação de expressões em tempo de compilação." }
+      ]
+    }
+  ]
+}
