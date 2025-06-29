@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './Tooltip.css';
 
-const Tooltip = ({ text, children }) => {
+const Tooltip = ({ descricao, uso, children }) => {
   const [visible, setVisible] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const ref = useRef(null);
@@ -11,7 +11,7 @@ const Tooltip = ({ text, children }) => {
     const rect = ref.current.getBoundingClientRect();
     setCoords({
       x: rect.left + rect.width / 2,
-      y: rect.top
+      y: rect.top,
     });
     setVisible(true);
   };
@@ -29,19 +29,30 @@ const Tooltip = ({ text, children }) => {
         {children}
       </span>
 
-      {visible &&
-        ReactDOM.createPortal(
+      {visible && ReactDOM.createPortal(
+        <>
           <div
-            className="tooltip-balao"
+            className="tooltip-balao tooltip-descricao"
             style={{
               top: coords.y - 20 + 'px',
-              left: coords.x + 'px',
+              left: coords.x - 100 + 'px',
             }}
           >
-            {text}
-          </div>,
-          document.body
-        )}
+            <strong>Descrição:</strong> {descricao}
+          </div>
+
+          <div
+            className="tooltip-balao tooltip-uso"
+            style={{
+              top: coords.y - 20 + 'px',
+              left: coords.x + 100 + 'px',
+            }}
+          >
+            <strong>Uso:</strong> {uso}
+          </div>
+        </>,
+        document.body
+      )}
     </>
   );
 };

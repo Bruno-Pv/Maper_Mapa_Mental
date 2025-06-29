@@ -130,12 +130,10 @@ const generateNodesAndEdges = (treeData) => {
         nodes.push({
           id: subId,
           data: {
-            label: subTopic.descricao ? (
-              <Tooltip text={subTopic.descricao}>
+            label: (
+              <Tooltip descricao={subTopic.descricao} uso={subTopic.uso}>
                 <strong>{subTopic.name}</strong>
               </Tooltip>
-            ) : (
-              <strong>{subTopic.name}</strong>
             )
           },
           position: { x: subX, y: subY },
