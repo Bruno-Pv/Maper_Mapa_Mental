@@ -1,0 +1,211 @@
+{
+  "name": "Rust",
+  "descricao": "Rust é uma linguagem de programação moderna, focada em segurança, desempenho e concorrência. É amplamente usada para desenvolvimento de sistemas, aplicações de baixo nível e softwares onde a performance e o controle de memória são críticos.",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é Rust?",
+          "descricao": "Linguagem compilada, segura por padrão, com foco em desempenho, segurança de memória e concorrência sem uso de garbage collector.",
+          "uso": "Entender os objetivos e aplicações da linguagem Rust."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Rust possui uma sintaxe moderna e rigorosa, com uso de ponto e vírgula, blocos com chaves e tipagem explícita ou inferida.",
+          "uso": "Escrever código correto e idiomático em Rust."
+        },
+        {
+          "name": "Variáveis e tipos",
+          "descricao": "Rust usa let para declarar variáveis. Por padrão são imutáveis, mas podem ser mutáveis com a palavra-chave mut.",
+          "uso": "Declarar e trabalhar com dados de forma segura e controlada."
+        },
+        {
+          "name": "Operadores",
+          "descricao": "Rust suporta operadores aritméticos, lógicos, relacionais e de atribuição.",
+          "uso": "Executar operações e expressões matemáticas e lógicas."
+        },
+        {
+          "name": "Entrada e saída",
+          "descricao": "Utiliza o módulo std::io com funções como println! e std::io::stdin para interações básicas.",
+          "uso": "Receber dados do usuário e exibir saídas no terminal."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Comentários de linha com // e de bloco com /* */. Comentários com /// geram documentação automática.",
+          "uso": "Documentar código e gerar documentação com cargo doc."
+        }
+      ]
+    },
+    {
+      "name": "Controle de Fluxo",
+      "children": [
+        {
+          "name": "If / Else / Match",
+          "descricao": "Estruturas condicionais com if e else. Match é uma estrutura poderosa para padrões e substitui switch.",
+          "uso": "Tomar decisões no fluxo do programa com controle preciso."
+        },
+        {
+          "name": "Loops: loop / while / for",
+          "descricao": "Rust oferece três formas de laço: loop (infinito), while (condicional) e for (iterativo sobre coleções).",
+          "uso": "Repetir ações de acordo com condições ou sequências."
+        },
+        {
+          "name": "Break / Continue",
+          "descricao": "Controle de laços, onde break encerra o loop e continue pula para a próxima iteração.",
+          "uso": "Controlar o fluxo de execução dentro de loops."
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Definindo funções",
+          "descricao": "Funções são definidas com fn e têm tipos explícitos para parâmetros e retornos.",
+          "uso": "Organizar e reutilizar lógica no código."
+        },
+        {
+          "name": "Retorno implícito",
+          "descricao": "Rust permite retornar valores sem a palavra return, usando a última expressão sem ponto e vírgula.",
+          "uso": "Retornar valores de forma concisa."
+        },
+        {
+          "name": "Funções com múltiplos parâmetros",
+          "descricao": "Permite funções com diversos argumentos, sempre com tipo explícito.",
+          "uso": "Trabalhar com entradas variadas em funções."
+        },
+        {
+          "name": "Closures",
+          "descricao": "Funções anônimas e flexíveis, que podem capturar variáveis do ambiente.",
+          "uso": "Criar lógica rápida e reutilizável inline."
+        }
+      ]
+    },
+    {
+      "name": "Tipos Compostos",
+      "children": [
+        {
+          "name": "Tuplas",
+          "descricao": "Agrupam múltiplos valores de tipos diferentes em uma única estrutura.",
+          "uso": "Retornar e manipular múltiplos valores juntos."
+        },
+        {
+          "name": "Arrays e vetores",
+          "descricao": "Arrays têm tamanho fixo. Vetores (Vec) são dinamicamente redimensionáveis.",
+          "uso": "Armazenar listas de dados ordenados."
+        },
+        {
+          "name": "Structs",
+          "descricao": "Tipos personalizados que agrupam dados com nomes. Podem ser usados com métodos.",
+          "uso": "Modelar entidades com múltiplas propriedades."
+        },
+        {
+          "name": "Enums e pattern matching",
+          "descricao": "Permitem representar múltiplas possibilidades com segurança. Usados com match para controle de fluxo.",
+          "uso": "Criar tipos com múltiplas formas e fazer distinções seguras."
+        }
+      ]
+    },
+    {
+      "name": "Segurança de Memória",
+      "children": [
+        {
+          "name": "Ownership",
+          "descricao": "Conceito central em Rust: cada valor tem um único dono responsável por sua memória.",
+          "uso": "Controlar acesso e evitar vazamentos de forma segura e sem garbage collector."
+        },
+        {
+          "name": "Borrowing e referências",
+          "descricao": "Permite acessar dados sem mover a posse, usando referências (&) e referências mutáveis (&mut).",
+          "uso": "Compartilhar acesso seguro sem copiar dados."
+        },
+        {
+          "name": "Lifetimes",
+          "descricao": "Anotações que indicam quanto tempo uma referência é válida. Garantem segurança em tempo de compilação.",
+          "uso": "Evitar referências inválidas ou uso após liberação de memória."
+        }
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
+        {
+          "name": "Result e Option",
+          "descricao": "Tipos usados para representar sucesso/erro (Result) ou valor/nulo (Option) de forma segura e explícita.",
+          "uso": "Evitar exceções e tratar erros de forma robusta."
+        },
+        {
+          "name": "Match e unwrap",
+          "descricao": "Uso de match para lidar com Result/Option. Unwrap obtém o valor diretamente (pode causar panic).",
+          "uso": "Tratar e extrair valores com segurança."
+        },
+        {
+          "name": "Expect e ? operador",
+          "descricao": "Expect permite definir mensagens de erro customizadas. O operador ? propaga erros automaticamente.",
+          "uso": "Tratar erros de forma elegante e prática."
+        }
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
+        {
+          "name": "Testes unitários",
+          "descricao": "Rust inclui suporte nativo a testes com a macro #[test] e funções de assert.",
+          "uso": "Garantir que o comportamento do código esteja correto."
+        },
+        {
+          "name": "Testes com cargo test",
+          "descricao": "Comando para rodar testes definidos no projeto. Integração completa com o compilador.",
+          "uso": "Executar testes automatizados facilmente."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas Populares",
+      "children": [
+        {
+          "name": "Serde",
+          "descricao": "Biblioteca para serialização e desserialização de dados em JSON, YAML, etc.",
+          "uso": "Ler e salvar dados estruturados em formatos comuns."
+        },
+        {
+          "name": "Tokio",
+          "descricao": "Runtime assíncrono para escrever aplicações assíncronas e escaláveis com async/await.",
+          "uso": "Construir servidores e aplicações concorrentes de alta performance."
+        },
+        {
+          "name": "Actix",
+          "descricao": "Framework web robusto e rápido baseado em atores e tokio.",
+          "uso": "Criar APIs e servidores web eficientes em Rust."
+        },
+        {
+          "name": "Clap",
+          "descricao": "Criação de interfaces de linha de comando (CLI) robustas e amigáveis.",
+          "uso": "Criar programas de terminal com argumentos organizados."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Macros",
+          "descricao": "Permitem gerar código em tempo de compilação com a macro_rules! ou procedural macros.",
+          "uso": "Reduzir repetição e gerar código automaticamente."
+        },
+        {
+          "name": "Traits e generics",
+          "descricao": "Traits definem comportamentos compartilháveis; generics permitem reuso de código para diferentes tipos.",
+          "uso": "Criar código reutilizável e extensível com tipagem forte."
+        },
+        {
+          "name": "Unsafe Rust",
+          "descricao": "Permite operações perigosas fora das garantias do compilador, como ponteiros brutos e acesso direto à memória.",
+          "uso": "Executar tarefas de baixo nível com controle total."
+        }
+      ]
+    }
+  ]
+}

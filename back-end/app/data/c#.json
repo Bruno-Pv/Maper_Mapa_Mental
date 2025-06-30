@@ -1,0 +1,216 @@
+{
+  "name": "C#",
+  "descricao": "C# (C Sharp) é uma linguagem de programação moderna, orientada a objetos e fortemente tipada, desenvolvida pela Microsoft. Muito usada no desenvolvimento de aplicações para Windows, web, jogos com Unity e APIs usando a plataforma .NET.",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é C#?",
+          "descricao": "Linguagem moderna criada pela Microsoft, com forte tipagem, orientação a objetos e ampla integração com a plataforma .NET.",
+          "uso": "Compreender a base e propósito da linguagem C#."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Regras de escrita em C#, incluindo ponto e vírgula, blocos com chaves {}, declaração explícita de tipos e convenções de nomenclatura.",
+          "uso": "Escrever código C# correto e estruturado."
+        },
+        {
+          "name": "Variáveis e tipos de dados",
+          "descricao": "Declaração de variáveis com tipos definidos (int, float, bool, string, etc.) e conceitos como var para inferência de tipo.",
+          "uso": "Armazenar dados com tipos específicos e previsíveis."
+        },
+        {
+          "name": "Operadores",
+          "descricao": "Uso de operadores aritméticos, relacionais, lógicos e de atribuição em expressões e estruturas de controle.",
+          "uso": "Executar cálculos, comparações e lógica condicional."
+        },
+        {
+          "name": "Entrada e saída",
+          "descricao": "Uso de Console.WriteLine para exibir dados e Console.ReadLine para capturar entrada do usuário.",
+          "uso": "Interagir com o usuário por meio do console."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Comentários de linha com // e comentários de bloco com /* */. Também há comentários XML para documentação automática.",
+          "uso": "Documentar e explicar partes do código."
+        }
+      ]
+    },
+    {
+      "name": "Controle de Fluxo",
+      "children": [
+        {
+          "name": "If / Else If / Else",
+          "descricao": "Blocos de decisão baseados em condições booleanas, permitindo caminhos diferentes no fluxo do programa.",
+          "uso": "Executar diferentes blocos de código com base em condições."
+        },
+        {
+          "name": "Switch",
+          "descricao": "Estrutura condicional que permite múltiplas comparações com valores específicos, usada como alternativa ao if/else.",
+          "uso": "Avaliar múltiplos casos de forma clara e eficiente."
+        },
+        {
+          "name": "For",
+          "descricao": "Laço de repetição com controle explícito de índice (inicialização, condição e incremento).",
+          "uso": "Executar repetições com controle exato do número de vezes."
+        },
+        {
+          "name": "While / Do While",
+          "descricao": "Laços baseados em condição: while verifica antes de executar; do while executa pelo menos uma vez.",
+          "uso": "Executar ações repetidamente com base em uma condição."
+        },
+        {
+          "name": "Break / Continue",
+          "descricao": "Comandos usados para sair ou pular iterações em laços.",
+          "uso": "Controlar o fluxo de execução dentro de loops."
+        }
+      ]
+    },
+    {
+      "name": "Programação Orientada a Objetos",
+      "children": [
+        {
+          "name": "Classes e objetos",
+          "descricao": "Definição de estruturas com atributos e métodos, e criação de instâncias (objetos) a partir delas.",
+          "uso": "Modelar entidades e comportamentos no código."
+        },
+        {
+          "name": "Atributos e métodos",
+          "descricao": "Atributos armazenam dados; métodos definem comportamentos das classes e objetos.",
+          "uso": "Definir propriedades e ações dos objetos."
+        },
+        {
+          "name": "Encapsulamento",
+          "descricao": "Ocultação dos detalhes internos da classe, permitindo acesso controlado por meio de propriedades (get/set).",
+          "uso": "Proteger e organizar o acesso aos dados."
+        },
+        {
+          "name": "Herança",
+          "descricao": "Permite que uma classe derive de outra, herdando atributos e métodos.",
+          "uso": "Reutilizar e estender funcionalidades de forma eficiente."
+        },
+        {
+          "name": "Polimorfismo",
+          "descricao": "Permite que diferentes classes implementem métodos com o mesmo nome, podendo ser usados de forma intercambiável.",
+          "uso": "Criar código flexível e extensível com interfaces ou herança."
+        }
+      ]
+    },
+    {
+      "name": "Trabalhando com Arquivos",
+      "children": [
+        {
+          "name": "Leitura e escrita de arquivos",
+          "descricao": "Uso de classes como StreamReader e StreamWriter para manipular arquivos de texto.",
+          "uso": "Ler e escrever informações persistentes em disco."
+        },
+        {
+          "name": "Using para contexto",
+          "descricao": "Uso do bloco using para garantir liberação de recursos automaticamente após o uso.",
+          "uso": "Evitar vazamento de recursos ao trabalhar com arquivos e streams."
+        },
+        {
+          "name": "Manipulação de diretórios",
+          "descricao": "Uso das classes Directory e File para criação, listagem, exclusão e verificação de arquivos e pastas.",
+          "uso": "Gerenciar estrutura de arquivos no sistema."
+        }
+      ]
+    },
+    {
+      "name": "Tratamento de Exceções",
+      "children": [
+        {
+          "name": "Try / Catch",
+          "descricao": "Bloco para capturar e tratar erros de execução sem interromper o programa.",
+          "uso": "Evitar falhas abruptas em caso de erro."
+        },
+        {
+          "name": "Finally",
+          "descricao": "Bloco que sempre é executado após o try/catch, útil para liberar recursos.",
+          "uso": "Executar código de limpeza independentemente do erro."
+        },
+        {
+          "name": "Throw",
+          "descricao": "Permite lançar exceções manualmente.",
+          "uso": "Gerar erros personalizados conforme necessidade."
+        },
+        {
+          "name": "Exceções personalizadas",
+          "descricao": "Criação de classes que herdam de Exception para representar erros específicos.",
+          "uso": "Controlar erros de maneira clara e orientada ao domínio da aplicação."
+        }
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
+        {
+          "name": "Testes com MSTest",
+          "descricao": "Framework de testes unitários nativo do .NET para criação e execução de testes automatizados.",
+          "uso": "Garantir que partes do código funcionem como esperado."
+        },
+        {
+          "name": "xUnit e NUnit",
+          "descricao": "Alternativas populares ao MSTest com recursos adicionais e maior flexibilidade.",
+          "uso": "Testar aplicações de forma modular, reutilizável e automatizada."
+        },
+        {
+          "name": "Asserts",
+          "descricao": "Verificações de condições em testes; falham se a condição não for verdadeira.",
+          "uso": "Validar resultados esperados em testes automatizados."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas e Recursos Populares",
+      "children": [
+        {
+          "name": "Entity Framework",
+          "descricao": "ORM da Microsoft para trabalhar com bancos de dados relacionais de forma orientada a objetos.",
+          "uso": "Mapear tabelas do banco para classes e simplificar consultas SQL."
+        },
+        {
+          "name": "ASP.NET",
+          "descricao": "Framework da Microsoft para desenvolvimento de aplicações web modernas com C#.",
+          "uso": "Criar APIs e aplicações web robustas com C#."
+        },
+        {
+          "name": "LINQ",
+          "descricao": "Sintaxe integrada para consultar coleções (listas, arrays, bancos) usando expressões claras e funcionais.",
+          "uso": "Filtrar, ordenar e transformar dados de forma concisa."
+        },
+        {
+          "name": "Unity",
+          "descricao": "Game engine popular que utiliza C# como linguagem principal de scripts.",
+          "uso": "Criar jogos 2D e 3D interativos e multiplataforma."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Delegates e eventos",
+          "descricao": "Delegates são ponteiros para métodos e eventos permitem comunicação entre classes baseada em ações.",
+          "uso": "Implementar programação orientada a eventos e callbacks."
+        },
+        {
+          "name": "Async / Await",
+          "descricao": "Palavras-chave para programação assíncrona e concorrente de forma simples e legível.",
+          "uso": "Executar tarefas simultâneas sem bloquear a execução principal."
+        },
+        {
+          "name": "Reflection",
+          "descricao": "Permite inspecionar e manipular metadados e tipos em tempo de execução.",
+          "uso": "Criar frameworks dinâmicos e realizar inspeção avançada."
+        },
+        {
+          "name": "Generics",
+          "descricao": "Permite criar classes, métodos e interfaces com tipos parametrizáveis.",
+          "uso": "Criar estruturas reutilizáveis e seguras em tempo de compilação."
+        }
+      ]
+    }
+  ]
+}

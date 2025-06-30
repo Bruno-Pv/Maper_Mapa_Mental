@@ -1,0 +1,211 @@
+{
+  "name": "Go",
+  "descricao": "Go, também conhecida como Golang, é uma linguagem de programação criada pelo Google. É conhecida por sua simplicidade, alto desempenho e suporte nativo à concorrência. Muito usada em aplicações web, APIs, microsserviços e sistemas distribuídos.",
+  "children": [
+    {
+      "name": "Fundamentos",
+      "children": [
+        {
+          "name": "O que é Go?",
+          "descricao": "Linguagem de programação compilada, com tipagem estática e sintaxe simples. Criada para resolver problemas de escalabilidade, concorrência e desempenho.",
+          "uso": "Compreender o propósito da linguagem e suas características principais."
+        },
+        {
+          "name": "Sintaxe básica",
+          "descricao": "Go possui uma sintaxe enxuta, com regras claras: chaves obrigatórias, uso do operador := para declarar variáveis e ausência de parênteses em estruturas condicionais.",
+          "uso": "Escrever código Go limpo e correto."
+        },
+        {
+          "name": "Variáveis e tipos de dados",
+          "descricao": "Declaração de variáveis com var ou com inferência (:=). Tipos comuns: int, float64, string, bool, arrays, slices, maps e structs.",
+          "uso": "Armazenar dados com tipos definidos de forma clara e segura."
+        },
+        {
+          "name": "Operadores",
+          "descricao": "Go oferece operadores aritméticos (+, -, *, /), relacionais (==, !=, >, <), lógicos (&&, ||, !) e de atribuição (=, +=, -=).",
+          "uso": "Realizar operações matemáticas, comparações e lógica."
+        },
+        {
+          "name": "Entrada e saída",
+          "descricao": "Uso do pacote fmt com funções como fmt.Println, fmt.Printf e fmt.Scanln para entrada e saída de dados no terminal.",
+          "uso": "Interagir com o usuário no console."
+        },
+        {
+          "name": "Comentários",
+          "descricao": "Comentários de linha começam com // e comentários de bloco usam /* */. Muito usados também para gerar documentação com ferramentas como godoc.",
+          "uso": "Documentar e explicar o código para facilitar entendimento."
+        }
+      ]
+    },
+    {
+      "name": "Controle de Fluxo",
+      "children": [
+        {
+          "name": "If / Else",
+          "descricao": "Permite tomada de decisões com base em condições. Não exige parênteses ao redor da condição.",
+          "uso": "Executar blocos de código com base em decisões lógicas."
+        },
+        {
+          "name": "Switch",
+          "descricao": "Estrutura para comparar múltiplos casos de forma clara, podendo substituir vários if/else.",
+          "uso": "Avaliar condições com múltiplos casos."
+        },
+        {
+          "name": "For",
+          "descricao": "Única estrutura de repetição da linguagem, usada para loops tradicionais, while e infinitos.",
+          "uso": "Repetir instruções enquanto uma condição for verdadeira."
+        },
+        {
+          "name": "Break / Continue",
+          "descricao": "Instruções para controlar o fluxo de loops: break encerra o loop; continue pula para a próxima iteração.",
+          "uso": "Modificar o comportamento de loops com controle fino."
+        }
+      ]
+    },
+    {
+      "name": "Funções",
+      "children": [
+        {
+          "name": "Definindo funções",
+          "descricao": "Go permite declarar funções com tipos explícitos de parâmetros e retorno. Suporta múltiplos retornos.",
+          "uso": "Organizar e reutilizar código com clareza."
+        },
+        {
+          "name": "Parâmetros nomeados e retorno múltiplo",
+          "descricao": "Funções podem nomear os valores de retorno e retornar múltiplos valores diretamente.",
+          "uso": "Melhorar legibilidade e eficiência no tratamento de resultados."
+        },
+        {
+          "name": "Funções anônimas",
+          "descricao": "Permite declarar funções sem nome, geralmente usadas como argumentos para outras funções ou goroutines.",
+          "uso": "Criar lógica rápida e reutilizável sem nomeação."
+        },
+        {
+          "name": "Defer",
+          "descricao": "Adia a execução de uma função até que a função externa termine. Muito usada para liberar recursos.",
+          "uso": "Executar ações de limpeza no final de uma função."
+        }
+      ]
+    },
+    {
+      "name": "Tipos Compostos",
+      "children": [
+        {
+          "name": "Arrays e slices",
+          "descricao": "Arrays têm tamanho fixo; slices são mais flexíveis e usados na prática. Ambos armazenam sequências de elementos do mesmo tipo.",
+          "uso": "Armazenar e manipular listas de dados."
+        },
+        {
+          "name": "Maps",
+          "descricao": "Estrutura chave-valor semelhante a dicionários. Muito útil para busca rápida e organização associativa.",
+          "uso": "Armazenar dados com acesso eficiente por chave."
+        },
+        {
+          "name": "Structs",
+          "descricao": "Tipos definidos pelo usuário que agrupam múltiplos campos. Usados para modelar entidades complexas.",
+          "uso": "Criar tipos personalizados com múltiplas propriedades."
+        }
+      ]
+    },
+    {
+      "name": "Concorrência",
+      "children": [
+        {
+          "name": "Goroutines",
+          "descricao": "Funções executadas concorrentemente com a palavra-chave go. Leves, eficientes e parte central do Go.",
+          "uso": "Executar tarefas simultâneas com consumo mínimo de recursos."
+        },
+        {
+          "name": "Channels",
+          "descricao": "Canais permitem comunicação entre goroutines, evitando concorrência perigosa.",
+          "uso": "Trocar dados de forma segura entre tarefas concorrentes."
+        },
+        {
+          "name": "Select",
+          "descricao": "Permite aguardar múltiplos canais simultaneamente, ideal para multiplexação.",
+          "uso": "Controlar fluxo concorrente com múltiplas comunicações."
+        }
+      ]
+    },
+    {
+      "name": "Tratamento de Erros",
+      "children": [
+        {
+          "name": "Erros como valores",
+          "descricao": "Erros em Go são valores retornados pelas funções. Devem ser tratados explicitamente.",
+          "uso": "Lidar com falhas de forma previsível e controlada."
+        },
+        {
+          "name": "Pacote errors",
+          "descricao": "Pacote padrão que fornece utilitários para criar e manipular erros.",
+          "uso": "Criar mensagens de erro e propagar falhas no programa."
+        },
+        {
+          "name": "Panic e recover",
+          "descricao": "Panic encerra a execução de forma abrupta. Recover pode recuperar a execução dentro de um defer.",
+          "uso": "Tratar situações inesperadas sem travar o sistema."
+        }
+      ]
+    },
+    {
+      "name": "Testes",
+      "children": [
+        {
+          "name": "Pacote testing",
+          "descricao": "Pacote padrão para criação de testes unitários em Go. Usa funções com nome TestX e recebe *testing.T.",
+          "uso": "Verificar automaticamente o comportamento correto do código."
+        },
+        {
+          "name": "TDD e Benchmarks",
+          "descricao": "Go suporta testes orientados por testes (TDD) e testes de performance com funções Benchmark.",
+          "uso": "Criar código confiável e medir seu desempenho."
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas Populares",
+      "children": [
+        {
+          "name": "Gin",
+          "descricao": "Framework web leve e rápido para criação de APIs RESTful.",
+          "uso": "Criar servidores HTTP e APIs com facilidade e desempenho."
+        },
+        {
+          "name": "Gorm",
+          "descricao": "ORM para Go que facilita o uso de bancos de dados relacionais com structs.",
+          "uso": "Interagir com bancos SQL de forma mais produtiva."
+        },
+        {
+          "name": "Cobra",
+          "descricao": "Biblioteca para criar interfaces de linha de comando (CLI) robustas.",
+          "uso": "Construir ferramentas de terminal organizadas e modulares."
+        },
+        {
+          "name": "Viper",
+          "descricao": "Gerenciamento de configurações para aplicações Go (JSON, YAML, ENV).",
+          "uso": "Lidar com configurações de forma flexível e robusta."
+        }
+      ]
+    },
+    {
+      "name": "Avançado",
+      "children": [
+        {
+          "name": "Interfaces",
+          "descricao": "Definem conjuntos de métodos que um tipo deve implementar. Go usa duck typing (se implementa, é válido).",
+          "uso": "Generalizar código e permitir polimorfismo simples."
+        },
+        {
+          "name": "Reflection",
+          "descricao": "Permite inspecionar tipos em tempo de execução, usando o pacote reflect.",
+          "uso": "Criar ferramentas genéricas e analisar estruturas dinamicamente."
+        },
+        {
+          "name": "Generics (desde Go 1.18)",
+          "descricao": "Permite criar funções e tipos que funcionam com diferentes tipos sem duplicar código.",
+          "uso": "Reutilizar lógica com segurança de tipos em tempo de compilação."
+        }
+      ]
+    }
+  ]
+}
